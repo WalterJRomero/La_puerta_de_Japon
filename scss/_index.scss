@@ -1,0 +1,230 @@
+
+.bloque-main  {
+    display: grid;
+    margin: 2px;
+    margin-bottom: 58px;
+    padding: 2px;
+    grid-template-areas:
+    ". grillaTituloIndex ."
+    ". grillaFox  . "
+    ". grillaFuji . " 
+    ". grillaTren ." 
+    ". grillaGato ."
+    "footer footer footer";
+    grid-template-columns: 2fr 2fr 2fr;
+    grid-column-gap: 0px;
+    justify-items: stretch;
+    align-content: space-between;
+    align-items: flex-start;
+    justify-content: space-evenly; }
+    
+//-----------------------------------
+
+.bloque-main__encabezado {
+    grid-area: grillaTituloIndex;
+    padding: 0px 0 0px 0; }
+
+//---------------------------------- 
+
+.bloque-main__titulo--subrayado{
+    text-decoration-line: underline;   
+}
+
+.bloque-main__titulo--bold {
+    font-weight: bold;
+}
+
+.bloque-main__titulo--grande{
+    font-size: 40px;
+} 
+
+//---------------------------
+
+.bloque-main__descripcion{
+    font-size: 30px;
+    width: auto;
+    height: auto;
+}
+
+//-----------------------------------
+
+.seccion-card{
+    margin: 10px;
+    padding: 20px;
+    display: flex;
+    flex-flow: nowrap column;
+    justify-content: space-around;
+    flex-basis: 100px;
+}
+
+.seccion-card--festividades{
+    grid-area: grillaFox; 
+}
+
+.seccion-card--ciudades{
+    grid-area: grillaFuji;
+}
+
+.seccion-card--transporte{
+    grid-area: grillaTren;
+}
+
+.seccion-card--sobreMi{
+    grid-area: grillaGato;
+}
+
+
+//--------------------------------------
+
+.seccion-card__enlace--tamano{
+    font-size: 30px;
+    width: auto;
+    height: auto; 
+}
+.seccion-card__enlace--bold{
+    font-weight: bold;  
+
+}
+
+//--------------------------------------
+
+.seccion-card__imagen{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    flex-basis: 25px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+//----------------------------------------
+
+.seccion-card__imagen--estilo{
+    margin: 2px;
+}
+
+//------------------------------
+
+.seccion-card__imagen__enlace--estilo{
+    background-size: cover;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    width: 100px;
+    height: 150px;
+    border-radius: 30%;
+    border: red 2px solid;
+}
+
+.seccion-card__imagen__enlace--fox{
+    background-image: url("../media/img/img-Fox.jpg"); 
+}
+
+.seccion-card__imagen__enlace--fuji{
+    background-image: url("../media/img/img-fuji.jpg");
+}
+
+.seccion-card__imagen__enlace--tren{
+    background-image: url("../media/img/img-tren.jpg");
+}
+
+.seccion-card__imagen__enlace--gato{
+    background-image: url("../media/img/img-nekko.jpg");
+}
+
+//--------------------MEDIAS----------------
+@media only screen and (max-width: 415px) {
+
+    .seccion-card__imagen__enlace--estilo{
+        width: 180px;
+        height: 200px; 
+    }
+
+    .bloque-main {
+        margin: 0px;
+        padding: 2px 0px 0px 0px; 
+    }
+
+    .bloque-main__encabezado{
+        margin-top: 0px;
+        padding-top: 10px; 
+    }
+
+    .bloque-main__titulo--grande {
+        font-size: 25px; 
+    }
+
+    .seccion-card__imagen {
+        margin-top: 10px;
+        margin-bottom: 10px; 
+    }
+
+    .bloque-main__descripcion {
+        font-size: 20px; 
+    }
+
+    .seccion-card__enlace--tamano {
+        font-size: 20px; 
+    } 
+
+    .bloque-main {
+        display: flex;
+        flex-flow: row wrap;
+    }
+
+}
+
+@media only screen and (min-width: 416px) and (max-width: 966px) {
+    
+    .seccion-card__imagen__enlace--estilo{
+        width: 110px;
+        height: 150px; }
+
+    .bloque-main {
+        margin: 0px;
+        padding: 0px; }
+
+    .bloque-main__encabezado  {
+        padding: 10px 0 20px 0;
+        margin-top: 0px;
+        width: 100%; }
+ 
+    .bloque-main__titulo--grande {
+        font-size: 30px; }
+ 
+    .seccion-card__imagen {
+        margin-top: 15px;
+        margin-bottom: 15px; }
+ 
+    .bloque-main__descripcion {
+        font-size: 25px; }    
+
+    .bloque-main {
+        display: grid;
+        grid-template-areas: 
+        "grillaTituloIndex"
+        "grillaFox"
+        "grillaFuji" 
+        "grillaTren" 
+        "grillaGato"
+        "footer";
+        grid-template-columns: 3fr; 
+    }
+}
+
+
+
+@media only screen and (min-width: 967px) {
+    
+    .seccion-card__imagen__enlace--estilo {
+      transition: height 2s, width 2s; }
+    
+    .seccion-card__imagen__enlace--estilo:hover {
+        height:250px;
+        width: 200px; }
+   
+    .bloque-main__titulo--transformado {
+      animation-duration: 5s;
+      animation-name: principal;
+      animation-iteration-count: infinite;
+      animation-timing-function: ease-in; } 
+    
+}

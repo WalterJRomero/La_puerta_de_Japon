@@ -1,0 +1,194 @@
+//-----------------
+$color-fondo:#FFF3F1;
+$color-principal:tomato;
+$espacio-letras:2px;
+$espacio-palabras:2px;
+$color-titulo:red;
+$tamano-total:100%;
+$color-redes-principal:default; //valores posibles default , alerta, contraste 
+$color-facebook:blue !default;
+$color-youtube:red !default;
+$color-instagram:purple !default;
+$color-fuente-lista:lista-default;//valores posibles lista-gris, lista-default, lista-alterna
+$color-iconos:(
+   facebook:$color-facebook,
+   youtube:$color-youtube, 
+   instagram:$color-instagram,
+);
+
+$color-fuente-alterna: darkgray !default;
+$color-fuente-default:black !default;
+$color-fuente-alerta:red !default;
+$negrita:bold;
+
+
+//--------------- estilos de mi footer-------------
+.footer {
+    background-image:linear-gradient($color-fondo,$color-principal);
+    border: none;  
+    text-decoration:none;         
+    letter-spacing:$espacio-letras;    
+    word-spacing: $espacio-palabras;
+    line-height: 1.6;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;  
+    grid-area:gFooter;    
+    padding-bottom:10px
+    
+}
+//----------------boton modal--------------------
+
+// .footer-modal{
+// }
+//--------------paginas sugeridas----------------------
+
+.footer-sugeridas{
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+
+@if $color-redes-principal == contraste{
+    
+    .footer-sugeridas__boton{
+        background-color: $color-fuente-default;
+        color:$color-fondo;
+    } 
+
+} @else if $color-redes-principal == alerta{
+  
+    .footer-sugeridas__boton {
+        background-color:$color-fuente-alerta;
+        color:$color-fondo
+    }
+}
+
+//--------------iconos de redes-utilizando maps y condicional------
+
+.footer-iconos__redes{
+    display: flex; 
+    align-items: center;
+}
+
+.footer-iconos__enlace{     
+    margin:0px 2px;
+    font-size: 1.4em;
+    color: black;
+    text-decoration: none;
+}
+  //-- para cada opcion en el mapa se repite el ciclo
+@each $red-social,$color in $color-iconos{
+    //--, si esta por "default" aplica colores default ya asignados red,blue, purple
+    @if $color-redes-principal == default{
+         
+        .footer-iconos__enlace--#{$red-social}{
+            @extend .footer-iconos__enlace;
+                color:$color;
+
+            @if $red-social == instagram{
+                font-size: 2em;
+            }
+        } 
+      //---si ponemos modo "alerta" se aplican el color red a los iconos      
+    }@else if$color-redes-principal == alerta {
+
+        .footer-iconos__enlace--#{$red-social}{
+            @extend .footer-iconos__enlace;
+                color:red;
+
+            @if $red-social == instagram{
+                font-size: 2em;
+            }
+        }
+        //---- si se pone modo "contraste" los colores de los iconos pasan a ser negros
+    }@else if$color-redes-principal == contraste {
+
+        .footer-iconos__enlace--#{$red-social}{
+            @extend .footer-iconos__enlace;
+                color:black;
+
+            @if $red-social == instagram{
+                font-size: 2em;
+            }
+        }
+    }
+}
+
+//---pequeño--mapa del sitio con condicional if para colores de enlaces-----------
+
+.footer-mapa{
+    display: flex;  
+}
+
+.footer-mapa__lista{    
+    
+    text-align:center;    
+    font-size: 1.1rem;
+    padding-left:0rem;
+}
+.footer-mapa__lista__item{
+
+    letter-spacing:normal;    
+    word-spacing:normal;    
+}
+
+.footer-mapa__enlace{
+
+    font-weight:$negrita;
+    text-decoration: none;
+
+    @if $color-fuente-lista == lista-default{
+        
+        color:$color-fuente-default;
+    
+    }@else if$color-fuente-lista== lista-alterna{
+
+        color:$color-fuente-alterna;
+    
+    }@else if$color-fuente-lista== lista-alerta{
+
+        color:$color-fuente-alerta;
+    }
+}
+
+//-----------------------medias-----------------------------------
+
+@media only screen and (max-width: 415px) {
+    .footer {        
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;    
+        justify-items: center;    
+    }
+    
+    .footer-iconos__redes{
+        display: flex;
+        flex-flow:row;
+        align-items: center;}
+}
+
+@media only screen and (min-width: 416px) and (max-width: 966px) {
+    .footer {
+        flex-flow:column;
+        justify-content: center;
+        align-items: center;
+    } 
+    
+    .footer-iconos__redes{        
+        flex-flow:row;        
+    }
+}
+
+@media only screen and (min-width: 967px) {
+
+    .footer {
+        background-image:linear-gradient(#FFF3F1,tomato );
+        width: $tamano-total;     
+        flex-flow: row wrap;      
+        }
+
+    .footer-iconos__redes{        
+        flex-flow:column;        
+    }
+} 

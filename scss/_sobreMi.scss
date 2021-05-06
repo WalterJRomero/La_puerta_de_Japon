@@ -1,0 +1,116 @@
+$alineado:center;
+$doble:200px;
+$mitad:50px;
+$base:100px;
+/*---------------imagenes de cada logo de pagina -----*/
+
+.encabezado-principal__titulo{
+        font-weight: bold;
+        text-align: $alineado;
+        color: red;
+}
+
+.encabezado-principal__titulo--grande{
+        font-size: 40px;               
+}
+
+.encabezado-principal__logo--medida{
+        height: 100%;
+        width: 100%;
+        max-height: 85px;
+        max-width: 65px;
+        border-radius: 10%; 
+}
+
+.foto-card__contenedor{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+        flex-basis: 25px;
+        margin-top: $mitad;
+        margin-bottom: $mitad;
+} 
+
+.foto-card__imagen{
+        background-size: cover;
+        background-position: $alineado;
+        background-repeat: no-repeat;
+        min-height:$doble;
+        min-width: 250px;
+        border-radius: 5%;
+        border: black 1px solid;
+}
+
+.foto-card__imagen--medida-principal{
+        height:$doble;
+        width: 250px;
+}
+
+.foto-card__imagen--medidas{
+        background-size: cover; 
+        background-position:$alineado;
+        background-repeat: no-repeat;
+        min-height:$doble;
+        min-width: 250px;
+        border-radius: 5%;
+        border: black 1px solid;         
+}
+
+.foto-card__imagen--foto1{
+        background-image: url("../media/img/sobremi-buda.jpg");
+}
+
+.foto-card__imagen--foto2{
+        background-image: url("../media/img/sobremi-puerta.jpg");
+}
+
+.foto-card__imagen--foto3{
+        background-image: url("../media/img/sobremi-nieve.JPG");
+}
+
+.foto-card__imagen--foto4{
+        background-image: url("../media/img/sobremi-31dic.JPG");
+        background-size: cover;        
+}
+
+.foto-card__descripcion {
+        text-align:$alineado; 
+        margin:5px 0px;
+}
+
+.foto-card__descripcion__texto{
+        color: black
+}
+
+.galeria-fotos-grande{
+        padding-bottom:4rem;
+}
+/*-----------416px a 966px--------------------------*/
+@media only screen and (min-width: 416px) and (max-width: 966px) {
+
+    .encabezado-principal__titulo--grande{
+        font-size: 30px;
+        color: red;
+    }
+
+    .foto-card__imagen{
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+
+}
+    /*------------------967px--------------*/
+@media only screen and (min-width: 900px) {
+
+    .foto-card__imagen--medida-principal {
+        transition: height 2s, width 2s; }
+
+    .foto-card__imagen--medida-principal:hover {
+        height: 350px;
+        width: 300px; }
+       
+    .foto-card__imagen--grande:hover {
+        height: 450px;
+        width: 650px; } 
+}
+

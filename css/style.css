@@ -1,0 +1,1071 @@
+@charset "UTF-8";
+.bloque-main {
+  display: grid;
+  margin: 2px;
+  margin-bottom: 58px;
+  padding: 2px;
+  grid-template-areas: ". grillaTituloIndex ." ". grillaFox  . " ". grillaFuji . "  ". grillaTren ."  ". grillaGato ." "footer footer footer";
+  grid-template-columns: 2fr 2fr 2fr;
+  grid-column-gap: 0px;
+  justify-items: stretch;
+  align-content: space-between;
+  align-items: flex-start;
+  justify-content: space-evenly; }
+
+.bloque-main__encabezado {
+  grid-area: grillaTituloIndex;
+  padding: 0px 0 0px 0; }
+
+.bloque-main__titulo--subrayado {
+  text-decoration-line: underline; }
+
+.bloque-main__titulo--bold {
+  font-weight: bold; }
+
+.bloque-main__titulo--grande {
+  font-size: 40px; }
+
+.bloque-main__descripcion {
+  font-size: 30px;
+  width: auto;
+  height: auto; }
+
+.seccion-card {
+  margin: 10px;
+  padding: 20px;
+  display: flex;
+  flex-flow: nowrap column;
+  justify-content: space-around;
+  flex-basis: 100px; }
+
+.seccion-card--festividades {
+  grid-area: grillaFox; }
+
+.seccion-card--ciudades {
+  grid-area: grillaFuji; }
+
+.seccion-card--transporte {
+  grid-area: grillaTren; }
+
+.seccion-card--sobreMi {
+  grid-area: grillaGato; }
+
+.seccion-card__enlace--tamano {
+  font-size: 30px;
+  width: auto;
+  height: auto; }
+
+.seccion-card__enlace--bold {
+  font-weight: bold; }
+
+.seccion-card__imagen {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  flex-basis: 25px;
+  margin-top: 50px;
+  margin-bottom: 50px; }
+
+.seccion-card__imagen--estilo {
+  margin: 2px; }
+
+.seccion-card__imagen__enlace--estilo {
+  background-size: cover;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  width: 100px;
+  height: 150px;
+  border-radius: 30%;
+  border: red 2px solid; }
+
+.seccion-card__imagen__enlace--fox {
+  background-image: url("../media/img/img-Fox.jpg"); }
+
+.seccion-card__imagen__enlace--fuji {
+  background-image: url("../media/img/img-fuji.jpg"); }
+
+.seccion-card__imagen__enlace--tren {
+  background-image: url("../media/img/img-tren.jpg"); }
+
+.seccion-card__imagen__enlace--gato {
+  background-image: url("../media/img/img-nekko.jpg"); }
+
+@media only screen and (max-width: 415px) {
+  .seccion-card__imagen__enlace--estilo {
+    width: 180px;
+    height: 200px; }
+  .bloque-main {
+    margin: 0px;
+    padding: 2px 0px 0px 0px; }
+  .bloque-main__encabezado {
+    margin-top: 0px;
+    padding-top: 10px; }
+  .bloque-main__titulo--grande {
+    font-size: 25px; }
+  .seccion-card__imagen {
+    margin-top: 10px;
+    margin-bottom: 10px; }
+  .bloque-main__descripcion {
+    font-size: 20px; }
+  .seccion-card__enlace--tamano {
+    font-size: 20px; }
+  .bloque-main {
+    display: flex;
+    flex-flow: row wrap; } }
+
+@media only screen and (min-width: 416px) and (max-width: 966px) {
+  .seccion-card__imagen__enlace--estilo {
+    width: 110px;
+    height: 150px; }
+  .bloque-main {
+    margin: 0px;
+    padding: 0px; }
+  .bloque-main__encabezado {
+    padding: 10px 0 20px 0;
+    margin-top: 0px;
+    width: 100%; }
+  .bloque-main__titulo--grande {
+    font-size: 30px; }
+  .seccion-card__imagen {
+    margin-top: 15px;
+    margin-bottom: 15px; }
+  .bloque-main__descripcion {
+    font-size: 25px; }
+  .bloque-main {
+    display: grid;
+    grid-template-areas: "grillaTituloIndex" "grillaFox" "grillaFuji"  "grillaTren"  "grillaGato" "footer";
+    grid-template-columns: 3fr; } }
+
+@media only screen and (min-width: 967px) {
+  .seccion-card__imagen__enlace--estilo {
+    transition: height 2s, width 2s; }
+  .seccion-card__imagen__enlace--estilo:hover {
+    height: 250px;
+    width: 200px; }
+  .bloque-main__titulo--transformado {
+    animation-duration: 5s;
+    animation-name: principal;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in; } }
+
+/*---------------imagenes de cada logo de pagina -----*/
+.encabezado-principal__titulo {
+  font-weight: bold;
+  text-align: center;
+  color: red; }
+
+.encabezado-principal__titulo--grande {
+  font-size: 40px; }
+
+.encabezado-principal__logo--medida {
+  height: 100%;
+  width: 100%;
+  max-height: 85px;
+  max-width: 65px;
+  border-radius: 10%; }
+
+.foto-card__contenedor {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  flex-basis: 25px;
+  margin-top: 50px;
+  margin-bottom: 50px; }
+
+.foto-card__imagen {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 200px;
+  min-width: 250px;
+  border-radius: 5%;
+  border: black 1px solid; }
+
+.foto-card__imagen--medida-principal {
+  height: 200px;
+  width: 250px; }
+
+.foto-card__imagen--medidas {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 200px;
+  min-width: 250px;
+  border-radius: 5%;
+  border: black 1px solid; }
+
+.foto-card__imagen--foto1 {
+  background-image: url("../media/img/sobremi-buda.jpg"); }
+
+.foto-card__imagen--foto2 {
+  background-image: url("../media/img/sobremi-puerta.jpg"); }
+
+.foto-card__imagen--foto3 {
+  background-image: url("../media/img/sobremi-nieve.JPG"); }
+
+.foto-card__imagen--foto4 {
+  background-image: url("../media/img/sobremi-31dic.JPG");
+  background-size: cover; }
+
+.foto-card__descripcion {
+  text-align: center;
+  margin: 5px 0px; }
+
+.foto-card__descripcion__texto {
+  color: black; }
+
+.galeria-fotos-grande {
+  padding-bottom: 4rem; }
+
+/*-----------416px a 966px--------------------------*/
+@media only screen and (min-width: 416px) and (max-width: 966px) {
+  .encabezado-principal__titulo--grande {
+    font-size: 30px;
+    color: red; }
+  .foto-card__imagen {
+    margin-top: 15px;
+    margin-bottom: 15px; } }
+
+/*------------------967px--------------*/
+@media only screen and (min-width: 900px) {
+  .foto-card__imagen--medida-principal {
+    transition: height 2s, width 2s; }
+  .foto-card__imagen--medida-principal:hover {
+    height: 350px;
+    width: 300px; }
+  .foto-card__imagen--grande:hover {
+    height: 450px;
+    width: 650px; } }
+
+.footer {
+  background-image: linear-gradient(#FFF3F1, tomato);
+  border: none;
+  text-decoration: none;
+  letter-spacing: 2px;
+  word-spacing: 2px;
+  line-height: 1.6;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  grid-area: gFooter;
+  padding-bottom: 10px; }
+
+.footer-sugeridas {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center; }
+
+.footer-iconos__redes {
+  display: flex;
+  align-items: center; }
+
+.footer-iconos__enlace, .footer-iconos__enlace--facebook, .footer-iconos__enlace--youtube, .footer-iconos__enlace--instagram {
+  margin: 0px 2px;
+  font-size: 1.4em;
+  color: black;
+  text-decoration: none; }
+
+.footer-iconos__enlace--facebook {
+  color: blue; }
+
+.footer-iconos__enlace--youtube {
+  color: red; }
+
+.footer-iconos__enlace--instagram {
+  color: purple;
+  font-size: 2em; }
+
+.footer-mapa {
+  display: flex; }
+
+.footer-mapa__lista {
+  text-align: center;
+  font-size: 1.1rem;
+  padding-left: 0rem; }
+
+.footer-mapa__lista__item {
+  letter-spacing: normal;
+  word-spacing: normal; }
+
+.footer-mapa__enlace {
+  font-weight: bold;
+  text-decoration: none;
+  color: black; }
+
+@media only screen and (max-width: 415px) {
+  .footer {
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    justify-items: center; }
+  .footer-iconos__redes {
+    display: flex;
+    flex-flow: row;
+    align-items: center; } }
+
+@media only screen and (min-width: 416px) and (max-width: 966px) {
+  .footer {
+    flex-flow: column;
+    justify-content: center;
+    align-items: center; }
+  .footer-iconos__redes {
+    flex-flow: row; } }
+
+@media only screen and (min-width: 967px) {
+  .footer {
+    background-image: linear-gradient(#FFF3F1, tomato);
+    width: 100%;
+    flex-flow: row wrap; }
+  .footer-iconos__redes {
+    flex-flow: column; } }
+
+.bloque-main-contacto__general {
+  padding: 2rem;
+  margin: 2rem; }
+
+.bloque-main-contacto__titulo {
+  font-weight: bold; }
+
+.bloque-main-contacto__formulario {
+  margin: 3rem 0; }
+
+/*-------------clases de bootstrap------------------------------*/
+.btn {
+  margin: 0.475rem; }
+
+.navbar {
+  height: max-content;
+  border: tomato 2px solid;
+  padding-bottom: 0;
+  padding-top: 0;
+  height: 4rem; }
+  .navbar div {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end; }
+
+.navbar-nav li ul {
+  background-color: tomato; }
+
+.navbar-nav li:hover {
+  background-color: black; }
+
+.dropdown-item:hover {
+  background-color: black; }
+
+.navbar-toggler {
+  background-color: white; }
+
+.row {
+  margin: 3px;
+  margin-bottom: 5px; }
+
+.btn--1 {
+  margin: 0.475rem; }
+
+.btn--2 {
+  margin: 0.95rem; }
+
+.btn--3 {
+  margin: 1.425rem; }
+
+.btn--4 {
+  margin: 1.9rem; }
+
+.img-thumbnail--radio1 {
+  border-radius: 3%; }
+
+.img-thumbnail--radio2 {
+  border-radius: 6%; }
+
+.img-thumbnail--radio3 {
+  border-radius: 9%; }
+
+.border--solid {
+  border: 2px solid blue !important;
+  background-color: transparent !important; }
+
+.border--dotted {
+  border: 2px dotted blue !important;
+  background-color: transparent !important; }
+
+.border--dashed {
+  border: 2px dashed blue !important;
+  background-color: transparent !important; }
+
+.border--double {
+  border: 2px double blue !important;
+  background-color: transparent !important; }
+
+@media only screen and (max-width: 415px) {
+  .navbar-nav {
+    width: 100%; } }
+
+* {
+  margin: 0px;
+  padding: 0px; }
+
+/*--------------index  y diseños generales---------------*/
+body {
+  background-color: #FFF3F1;
+  font-family: "Nunito Sans", sans-serif, "Reggae One", cursive;
+  font-style: normal;
+  font-weight: 400;
+  font-size: normal;
+  padding-top: 0px;
+  width: 100%;
+  margin: margin 0px;
+  overflow-x: hidden;
+  -webkit-tap-hightlight-color: black; }
+
+.puerta {
+  font-family: "Reggae One", cursive;
+  color: white;
+  background-color: transparent; }
+
+.colorMenu {
+  background-color: tomato;
+  color: white;
+  font-weight: bold; }
+
+p {
+  color: black;
+  font-weight: 3rem;
+  padding: 2px; }
+
+h1 {
+  color: red;
+  font-family: "Reggae One", cursive;
+  letter-spacing: 3px;
+  word-spacing: 10px;
+  padding-top: 1rem;
+  padding-bottom: 1rem; }
+
+@keyframes principal {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+section ul li {
+  color: black;
+  font-weight: 5rem;
+  list-style: none; }
+
+/*-----------------banner ---------------*/
+.fondoBanner {
+  background-image: url("../media/img/banner.jpg");
+  background-repeat: repeat;
+  background-size: 300px;
+  width: 100%;
+  height: 5rem;
+  border-top: 0px;
+  border: tomato 4px solid; }
+
+.banner {
+  height: 40%;
+  width: 100%;
+  max-width: 100px;
+  max-height: 100px; }
+
+.border {
+  border-radius: 20%;
+  background-color: red; }
+
+/*---------------imagenes de cada logo de pagina -----*/
+.imagenFox {
+  background-image: url("../media/img/img-Fox.jpg"); }
+
+.imagenFuji {
+  background-image: url("../media/img/img-fuji.jpg"); }
+
+.imagenTren {
+  background-image: url("../media/img/img-tren.jpg"); }
+
+.imagenGato {
+  background-image: url("../media/img/img-nekko.jpg"); }
+
+/*--------------estilos que uso en todo el sitio y sus media---------*/
+.italica {
+  font-style: italic; }
+
+.negrita {
+  font-weight: bold; }
+
+.texto-grande {
+  font-size: 40px; }
+
+.texto-mediano {
+  font-size: 30px;
+  width: auto;
+  height: auto; }
+
+.texto-pequeno {
+  font-size: 20px; }
+
+.titulosSecciones {
+  color: red; }
+
+.textoAlineado-izq {
+  text-align: left; }
+
+.textoAlineado-cent {
+  text-align: center; }
+
+.textoAlineado-der {
+  text-align: right; }
+
+/* -------------------estilos en ciudades-------------------*/
+.listaCiudades {
+  list-style-type: none;
+  list-style-image: none;
+  margin: 20px;
+  padding-top: 40px; }
+  .listaCiudades h3 {
+    padding-top: 20px;
+    padding-bottom: 25px;
+    border-bottom: red 2px solid; }
+  .listaCiudades p {
+    margin-left: 10%;
+    padding: 35px;
+    width: 50%;
+    text-align: center; }
+
+.subrayado {
+  text-decoration-line: underline; }
+
+.sinDecorado {
+  text-decoration-line: none; }
+
+.tamanoImagenes {
+  height: 100%;
+  width: 100%;
+  max-height: 85px;
+  max-width: 65px;
+  border-radius: 10%; }
+
+/*----------------estilos de seccion festividades con flex-----------*/
+.menuPrincipal {
+  margin: 10px;
+  padding: 20px;
+  display: flex;
+  flex-flow: wrap column;
+  justify-content: space-around;
+  flex-basis: 100px; }
+
+.festividades {
+  margin: 10px;
+  padding: 20px;
+  display: flex;
+  flex-flow: nowrap column;
+  justify-content: space-around;
+  flex-basis: 100px; }
+
+.fotosFestividades {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  flex-basis: 25px;
+  margin-top: 50px;
+  margin-bottom: 50px; }
+
+.fotosFest {
+  margin: 2px; }
+
+.fotoFs {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 200px;
+  min-width: 250px;
+  border-radius: 5%;
+  border: black 1px solid; }
+
+.fotoFs1 {
+  background-image: url("../media/img/festividades-enero1.jpg");
+  flex-grow: 1; }
+
+.fotoFs2 {
+  background-image: url("../media/img/festividades-enero2.jpg"); }
+
+.fotoFs3 {
+  background-image: url("../media/img/festividades-enero3.jpg"); }
+
+.fotoFs4 {
+  background-image: url("../media/img/festividades-enero4.jpg"); }
+
+.fotoFs6 {
+  background-image: url("../media/img/festividades-abril1.jpg"); }
+
+.fotoFs7 {
+  background-image: url("../media/img/festividades-abril2.jpg"); }
+
+.fotoFs8 {
+  background-image: url("../media/img/festividades-abril3.jpg"); }
+
+.fotoFs9 {
+  background-image: url("../media/img/festividades-abril4.jpg"); }
+
+.fotoGrow {
+  flex-grow: 1; }
+
+/* ----------------- estilos de transporte----------------------*/
+.listaTransporte li {
+  list-style-type: none;
+  list-style-image: none;
+  margin: 20px;
+  padding-top: 40px; }
+
+.transporteFlex {
+  margin: 10px;
+  padding: 20px;
+  display: flex;
+  flex-flow: nowrap row;
+  justify-content: center; }
+
+.fotoTr {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 200px;
+  min-width: 250px;
+  border-radius: 5%;
+  border: black 1px solid; }
+
+.fotoTrFlex {
+  background-size: cover;
+  background-position: center;
+  min-height: 250px;
+  min-width: 350px;
+  border-radius: 5%;
+  flex-grow: 0;
+  border: black 1px solid; }
+
+/* ---------- estilo de seccion shinkansen------------------- */
+.flex-shinkansen {
+  margin: 10px;
+  padding: 20px;
+  display: flex;
+  flex-flow: nowrap column;
+  justify-content: space-between; }
+
+.fotosFlex-shinkansen {
+  display: flex;
+  flex-flow: wrap row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 50px;
+  margin-bottom: 50px; }
+
+/*-------------------- fotos de seccion transporte-----------------*/
+.fotoJrEstandar {
+  background-image: url("../media/img/transporte-jrpassestandar.jpg"); }
+
+.fotoJrGreen {
+  background-image: url("../media/img/transporte-jrgreen.jpg"); }
+
+.fotoIcoca {
+  background-image: url("../media/img/transporte-icicoca.jpg");
+  background-size: 95%; }
+
+.fotoSuica {
+  background-image: url("../media/img/transporte-icsuica.jpg");
+  background-size: 95%; }
+
+.fotoShinkansen {
+  background-image: url("../media/img/transporte-shinkansen1.jpg"); }
+
+.fotoShinkansenGreen {
+  background-image: url("../media/img/transporte-shinkansen2.jpg"); }
+
+.fotoShinkansenYellow {
+  background-image: url("../media/img/transporte-shinkansen3.jpg"); }
+
+.fotoShinkansenEva {
+  background-image: url("../media/img/transporte-shinkansen4.jpg");
+  flex-grow: 1; }
+
+.fotoTrenLocal1 {
+  background-image: url("../media/img/transporte-trenjr.jpg"); }
+
+.fotoTrenLocal2 {
+  background-image: url("../media/img/transporte-trenpikachu.jpg"); }
+
+.fotoTaxi1 {
+  background-image: url("../media/img//transporte-taxi1.jpg"); }
+
+.fotoTaxi2 {
+  background-image: url("../media/img/transporte-taxi2.jpg"); }
+
+.fotoCole1 {
+  background-image: url("../media/img/transporte-busghibli.jpeg"); }
+
+.fotoCole2 {
+  background-image: url("../media/img/transporte-busjapan.jpg"); }
+
+.grillaTransporte {
+  display: grid;
+  grid-template-areas: "tituloJr tituloJr fotoJr"  "textoIc textoIc   fotoIc"  "tituloShin tituloShin tituloShin"    "fotoShin fotoShin   fotoShin"  "tituloCole tituloCole fotoCole"  "tituloTaxi tituloTaxi fotoTaxi"  "tituloTren tituloTren fotoTren";
+  grid-template-columns: 4fr 1fr;
+  grid-template-rows: max-content;
+  grid-row-gap: 50px;
+  grid-column-gap: 5px;
+  justify-items: stretch;
+  align-content: space-between;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  padding: 1rem; }
+
+.grillaTituloJr {
+  grid-area: tituloJr; }
+
+.grillaFotosJr {
+  grid-area: fotoJr; }
+
+.grillaTituloIc {
+  grid-area: textoIc; }
+
+.grillaFotosIc {
+  grid-area: fotoIc; }
+
+.grillaTituloShin {
+  grid-area: tituloShin; }
+
+.grillaFotosShin {
+  grid-area: fotoShin;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  flex-basis: 50px; }
+
+.grow {
+  transition: all .3s ease-in-out; }
+  .grow:hover {
+    transform: scale(1.5, 1.5); }
+
+.grillaTituloCole {
+  grid-area: tituloCole; }
+
+.grillaFotosCole {
+  grid-area: fotoCole; }
+
+.grillaTituloTaxi {
+  grid-area: tituloTaxi; }
+
+.grillaFotosTaxi {
+  grid-area: fotoTaxi; }
+
+.grillaTituloTren {
+  grid-area: tituloTren; }
+
+.grillaFotosTren {
+  grid-area: fotoTren; }
+
+/*------------estilo de imagenes laterales aside-------------*/
+.osakaCastle {
+  background-image: url("../media/img/festividades-aside-castle.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: auto;
+  height: auto;
+  padding-right: 10px;
+  margin-right: 10px; }
+
+.sakuraTree {
+  background-image: url("../media/img/festividades-aside-sakura.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  grid-template-columns: 3fr;
+  width: auto;
+  height: auto;
+  padding-right: 10px;
+  margin-right: 10px; }
+
+/*---------------grilla de seccion festividades -----*/
+.grillaFestividades {
+  display: grid;
+  grid-template-areas: "gFestividades gFestividades gFestividades gFestividades"  "gEnero gEnero gEnero aEnero"  "fEnero fEnero fEnero aEnero"  "iEnero iEnero iEnero aEnero"  "gAbril gAbril gAbril aAbril"   "fAbril fAbril fAbril aAbril"  "iAbril iAbril iAbril aAbril"     "gFooter gFooter gFooter gFooter";
+  grid-template-columns: 3fr 3fr 3fr 1.6fr;
+  grid-column-gap: 2px;
+  justify-items: stretch;
+  align-content: center;
+  align-items: center;
+  justify-content: stretch;
+  padding-right: 0px;
+  margin-bottom: 60px; }
+
+.bordeRojo {
+  border-bottom: red 2px solid; }
+
+.grillaTitulosFestividades {
+  grid-area: gFestividades;
+  padding: 0.5rem; }
+
+.grillaEnero {
+  grid-area: gEnero; }
+
+.fotosGrillaEnero {
+  grid-area: fEnero; }
+
+.infoEnero {
+  grid-area: iEnero; }
+
+.grillaAbril {
+  grid-area: gAbril; }
+
+.fotosGrillaAbril {
+  grid-area: fAbril; }
+
+.infoAbril {
+  grid-area: iAbril; }
+
+.propAside {
+  background-size: cover;
+  background-position: center;
+  list-style: none;
+  border-radius: 1%;
+  width: 96%;
+  height: 95%;
+  border: black 1px solid; }
+
+.asideEnero {
+  grid-area: aEnero;
+  background-image: url("../media/img/festividades-aside-castle.jpg"); }
+  .asideEnero ul li {
+    list-style: none; }
+
+.asideAbril {
+  grid-area: aAbril;
+  background-image: url("../media/img/festividades-aside-sakura.jpg"); }
+
+/*------------- definiciones de seccion ciudades turisticas-----------*/
+.asideCiudad {
+  margin: 10px;
+  width: 100%;
+  height: 100%;
+  min-height: 50px;
+  min-width: 100px;
+  max-width: 350px;
+  max-height: 200px; }
+
+/* -------------------estilos de mapa de ciudades turisticas-------------*/
+.mapaTokyo {
+  grid-area: mTokyo; }
+
+.mapaKyoto {
+  grid-area: mKyoto; }
+
+.mapaNara {
+  grid-area: mNara; }
+
+.mapaMiyajima {
+  grid-area: mMiyajima; }
+
+.asideTokyo {
+  grid-area: aTokyo; }
+
+.fotosGrillaTokyo {
+  grid-area: fTokyo; }
+
+.grillaTokyo {
+  grid-area: gTokyo; }
+
+.asideKyoto {
+  grid-area: aKyoto; }
+
+.fotosGrillaKyoto {
+  grid-area: fKyoto; }
+
+.grillaKyoto {
+  grid-area: gKyoto; }
+
+.asideNara {
+  grid-area: aNara; }
+
+.fotosGrillaNara {
+  grid-area: fNara; }
+
+.grillaNara {
+  grid-area: gNara; }
+
+.asideMiyajima {
+  grid-area: aMiyajima; }
+
+.fotosGrillaMiyajima {
+  grid-area: fMiyajima; }
+
+.grillaMiyajima {
+  grid-area: gMiyajima; }
+
+.grillaCiudades h3 {
+  border-bottom: red 2px solid; }
+
+.grillaTituloCiudades {
+  grid-area: gCiudades; }
+
+.grillaCiudades {
+  display: grid;
+  grid-template-areas: "gCiudades gCiudades gCiudades gCiudades"  "gTokyo gTokyo gTokyo mTokyo"  "gTokyo gTokyo gTokyo aTokyo"  "mKyoto gKyoto gKyoto gKyoto"      "aKyoto gKyoto gKyoto gKyoto"      "gNara gNara gNara mNara"  "gNara gNara gNara aNara"  "mMiyajima gMiyajima gMiyajima gMiyajima"  "aMiyajima gMiyajima gMiyajima gMiyajima"   "gFooter gFooter gFooter gFooter";
+  grid-template-columns: 2fr 2fr 2fr 2fr;
+  grid-column-gap: 2px;
+  row-gap: 60px;
+  justify-items: center;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  padding: 0.5rem; }
+
+.fotoTk1 {
+  background-image: url("../media/img/ciudades-tokyo1.jpg"); }
+
+.fotoTk2 {
+  background-image: url("../media/img/ciudades-tokyo2.jpg"); }
+
+.fotoTk3 {
+  background-image: url("../media/img/ciudades-tokyo3.jpg"); }
+
+.fotoKy1 {
+  background-image: url("../media/img/ciudades-kyoto1.jpg"); }
+
+.fotoKy2 {
+  background-image: url("../media/img/ciudades-kyoto2.jpg"); }
+
+.fotoKy3 {
+  background-image: url("../media/img/ciudades-kyoto3.jpg"); }
+
+.fotoN1 {
+  background-image: url("../media/img/ciudades-nara1.jpg"); }
+
+.fotoN2 {
+  background-image: url("../media/img/ciudades-nara2.jpg"); }
+
+.fotoN3 {
+  background-image: url("../media/img/ciudades-nara3.jpg"); }
+
+.fotoM1 {
+  background-image: url("../media/img/ciudades-miyajima1.jpg"); }
+
+.fotoM2 {
+  background-image: url("../media/img/ciudades-miyajima2.jpg"); }
+
+.fotoM3 {
+  background-image: url("../media/img/ciudades-miyajima3.jpg"); }
+
+/*-------------------------medias-------------------------*/
+/*------hasta 415px--------------------------------------*/
+@media only screen and (max-width: 415px) {
+  body {
+    background-color: #FFF3F1;
+    padding-top: 0px;
+    font-weight: 200;
+    margin-top: 0px; }
+  p {
+    color: black;
+    font-weight: bold;
+    text-align: justify; }
+  h1 {
+    font-weight: 12px;
+    letter-spacing: normal;
+    word-spacing: 2px; }
+  .fondoBanner {
+    height: 70px;
+    border-top: 0x;
+    border-color: black 2px solid;
+    z-index: 9999; }
+  .footer {
+    flex-flow: column;
+    justify-content: space-evenly;
+    align-items: center; }
+  .festividades {
+    margin: 5px;
+    padding: 5px; }
+  .grillaTransporte {
+    grid-template-areas: "tituloJr" "fotoJr"       "textoIc" "fotoIc" "tituloShin" "fotoShin" "fotoShin" "fotoShin" "fotoShin"   "tituloCole" "fotoCole" "tituloTaxi" "fotoTaxi" "tituloTren" "fotoTren";
+    justify-items: center;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: 1fr; }
+  .texto-grande {
+    font-size: 25px; }
+  .fotosFestividades {
+    margin-top: 10px;
+    margin-bottom: 10px; }
+  .grillaFestividades {
+    display: grid;
+    grid-template-areas: "gFestividades"         "gEnero"                             "fEnero"       "iEnero" "gAbril" "fAbril" "iAbril" "gFooter";
+    grid-template-columns: 3fr; }
+  .propAside {
+    display: none; }
+  .grillaCiudades {
+    grid-template-areas: "gCiudades" "gTokyo "      "gKyoto"             " gNara "         "gMiyajima"       "gFooter ";
+    grid-template-columns: 3fr; }
+  .texto-mediano {
+    font-size: 20px; }
+  .grow {
+    transition: none; }
+    .grow:hover {
+      transform: none; }
+  .sitemap {
+    display: none; }
+  .sitemap-habilitado {
+    display: contents; } }
+
+/*-----------416px a 966px--------------------------*/
+@media only screen and (min-width: 416px) and (max-width: 966px) {
+  p {
+    color: black;
+    font-weight: bold;
+    text-align: justify; }
+  h1 {
+    font-weight: 25px;
+    letter-spacing: 1px;
+    word-spacing: 5px;
+    padding: 5px; }
+  .fondoBanner {
+    height: 60px;
+    z-index: 9999; }
+  .texto-grande {
+    font-size: 30px; }
+  .texto-mediano {
+    font-size: 25px; }
+  .festividades {
+    margin: 6px;
+    padding: 6px; }
+  .fotosFestividades {
+    margin-top: 15px;
+    margin-bottom: 15px; }
+  .grillaFestividades {
+    display: grid;
+    grid-template-areas: "gFestividades gFestividades" "gEnero gEnero"      "fEnero fEnero"       "iEnero iEnero" "gAbril gAbril" "fAbril fAbril" "iAbril iAbril" "gFooter gFooter";
+    grid-template-columns: auto; }
+  .propAside {
+    display: none; }
+  .grillaCiudades {
+    grid-template-areas: "gCiudades gCiudades"     "gTokyo gTokyo" "gKyoto gKyoto" "gNara gNara "        "gMiyajima gMiyajima"       "gFooter gFooter ";
+    grid-template-columns: 1fr 1fr; } }
+
+/*-------------------967px-------------*/
+@media only screen and (max-width: 991px) {
+  .colorMenu {
+    background-image: linear-gradient(30deg, tomato, #FFF3F1); } }
+
+@media (min-width: 992px) {
+  .navbar-expand-lg .navbar-collapse {
+    justify-content: flex-end; } }
+
+.sitemap {
+  margin-bottom: 100px; }
+
+.site-map-web-padding {
+  padding-left: 0px;
+  list-style-type: none;
+  letter-spacing: normal;
+  word-spacing: normal; }
+  .site-map-web-padding a {
+    color: black; }
+
+.medidaTravolta {
+  width: 400px;
+  height: 250px;
+  margin-bottom: 60px; }
