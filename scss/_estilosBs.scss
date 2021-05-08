@@ -56,6 +56,13 @@ $valor:.475rem;
     margin-bottom:5px;
 }
 
+
+.btn-outline-dark:hover{
+    border: red 1px solid;  
+}
+
+
+
 //-----------clases bs modificadas-for---la primer clase la uso! las demas son de pruebas-------------
 
 @for $boton from 1 through 4{

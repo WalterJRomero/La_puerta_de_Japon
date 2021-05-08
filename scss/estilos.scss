@@ -3,6 +3,7 @@ $color-principal:tomato;
 $color-black:black;
 $color-white:white;
 $color-titulo:red;
+$color-enlace:#0d6efd;
 $font-principal:'Nunito Sans', sans-serif;
 $font-titulo:'Reggae One', cursive;
 $sin-margen:margin 0px;
@@ -37,7 +38,7 @@ body {
 .puerta {
     font-family: $font-titulo;
     color:  $color-white;    
-    background-color: transparent;   
+    background-color: transparent;
 }
 
 .colorMenu{
@@ -948,7 +949,6 @@ section {
 }    
 /*-------------------967px-------------*/
 
-
 @media only screen and (max-width: 991px){
 
     .colorMenu {        
@@ -972,12 +972,15 @@ section {
         
     a{
         color:$color-black;
+
+        &:hover{
+            color:$color-enlace;
+        }
+
     }
 }
 .medidaTravolta {
     width:400px;
     height:250px;
     margin-bottom:60px;
-}
-  
-   
+}  

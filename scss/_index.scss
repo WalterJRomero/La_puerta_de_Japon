@@ -46,6 +46,12 @@
     height: auto;
 }
 
+.bloque-main__titulo--transformado {
+    animation-duration: 5s;
+    animation-name: principal;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in; } 
+
 //-----------------------------------
 
 .seccion-card{
@@ -73,7 +79,6 @@
     grid-area: grillaGato;
 }
 
-
 //--------------------------------------
 
 .seccion-card__enlace--tamano{
@@ -83,7 +88,7 @@
 }
 .seccion-card__enlace--bold{
     font-weight: bold;  
-
+    color:tomato;
 }
 
 //--------------------------------------
@@ -210,21 +215,14 @@
     }
 }
 
-
-
 @media only screen and (min-width: 967px) {
     
     .seccion-card__imagen__enlace--estilo {
-      transition: height 2s, width 2s; }
+      transition: height 2s, width 2s; 
+    }
     
     .seccion-card__imagen__enlace--estilo:hover {
-        height:250px;
-        width: 200px; }
-   
-    .bloque-main__titulo--transformado {
-      animation-duration: 5s;
-      animation-name: principal;
-      animation-iteration-count: infinite;
-      animation-timing-function: ease-in; } 
-    
+        height:200px;
+        width: 150px; 
+    }       
 }

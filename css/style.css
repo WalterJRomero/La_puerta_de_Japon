@@ -30,6 +30,12 @@
   width: auto;
   height: auto; }
 
+.bloque-main__titulo--transformado {
+  animation-duration: 5s;
+  animation-name: principal;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in; }
+
 .seccion-card {
   margin: 10px;
   padding: 20px;
@@ -56,7 +62,8 @@
   height: auto; }
 
 .seccion-card__enlace--bold {
-  font-weight: bold; }
+  font-weight: bold;
+  color: tomato; }
 
 .seccion-card__imagen {
   display: flex;
@@ -140,13 +147,8 @@
   .seccion-card__imagen__enlace--estilo {
     transition: height 2s, width 2s; }
   .seccion-card__imagen__enlace--estilo:hover {
-    height: 250px;
-    width: 200px; }
-  .bloque-main__titulo--transformado {
-    animation-duration: 5s;
-    animation-name: principal;
-    animation-iteration-count: infinite;
-    animation-timing-function: ease-in; } }
+    height: 200px;
+    width: 150px; } }
 
 /*---------------imagenes de cada logo de pagina -----*/
 .encabezado-principal__titulo {
@@ -265,6 +267,9 @@
   color: black;
   text-decoration: none; }
 
+.footer-iconos__enlace:hover, .footer-iconos__enlace--facebook:hover, .footer-iconos__enlace--youtube:hover, .footer-iconos__enlace--instagram:hover {
+  color: black; }
+
 .footer-iconos__enlace--facebook {
   color: blue; }
 
@@ -359,6 +364,9 @@
 .row {
   margin: 3px;
   margin-bottom: 5px; }
+
+.btn-outline-dark:hover {
+  border: red 1px solid; }
 
 .btn--1 {
   margin: 0.475rem; }
@@ -1064,6 +1072,8 @@ section ul li {
   word-spacing: normal; }
   .site-map-web-padding a {
     color: black; }
+    .site-map-web-padding a:hover {
+      color: #0d6efd; }
 
 .medidaTravolta {
   width: 400px;
