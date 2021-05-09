@@ -19,46 +19,54 @@
     <header class="fondoBanner conteiner-fluid">
         <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top "> 
             <div class="container-fluid colorMenu">
-               <a class="navbar-brand puerta text-white" href="../index.html" alt="enlace a index">La puerta de Japon</a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle   navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse fw-bold" id="navbarNavDropdown">
+                <a class="navbar-brand puerta text-white btn-outline-dark" href="index.html" alt="enlace a index">La puerta de Japón</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse fw-bold" id="navbarNavDropdown">
                     <ul class="navbar-nav fw-bold">
                         <li class="nav-item">
-                            <a class="nav-link active text-white fw-bold" aria-current="page" href="../index.html">Inicio</a>
+                            <a class="nav-link active text-white fw-bold" aria-current="page" href="../index.html" alt="enlace a index">Inicio</a>
                         </li>
-                        <li class="nav-item ">
-                            <a class="nav-link active text-white" href="festividades.html">Festividades</a>
-                        </li>      
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle active text-white" href="ciudades_turisticas.html" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">Ciudades Turísticas</a>
+                            <a class="nav-link dropdown-toggle active text-white" href="festividades.html" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false" alt="enlace a festividades">Festividades</a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                                 <li>
-                                    <a class="dropdown-item text-light fw-bold" href="ciudades_turisticas.html#tokyo">Tokyo</a>
+                                    <a class="dropdown-item text-light fw-bold" href="festividades.html#enero" alt="enlace a fiestas enero">Enero</a>
                                 </li>
                                 <li>
-                                    <a class="dropdown-item text-light fw-bold" href="ciudades_turisticas.html#kyoto">Kyoto</a>
+                                    <a class="dropdown-item text-light fw-bold" href="festividades.html#abril" alt="enlace a fiestas abril">Abril</a>
+                                </li>
+                            </ul>
+                        </li>      
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle active text-white" href="ciudades_turisticas.html" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false" alt="enlace a ciudades turisticas">Ciudades Turísticas</a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <li>
+                                    <a class="dropdown-item text-light fw-bold" href="ciudades_turisticas.html#tokyo" alt="enlace a ciudad tokyo">Tokyo</a>
                                 </li>
                                 <li>
-                                    <a class="dropdown-item text-light fw-bold" href="ciudades_turisticas.html#nara">Nara</a>
-                                </li>   
+                                    <a class="dropdown-item text-light fw-bold" href="ciudades_turisticas.html#kyoto" alt="enlace a ciudad kyoto">Kyoto</a>
+                                </li>
                                 <li>
-                                    <a class="dropdown-item text-light fw-bold" href="ciudades_turisticas.html#miyajima">Miyajima</a>
+                                    <a class="dropdown-item text-light fw-bold" href="ciudades_turisticas.html#nara" alt="enlace a ciudad nara">Nara</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item text-light fw-bold" href="ciudades_turisticas.html#miyajima" alt="enlace a ciudad miyajima">Miyajima</a>
                                 </li>
                             </ul>
                         </li> 
                         <li>
-                            <a class="nav-link active text-white" href="transporte.html">Transporte</a>
+                            <a class="nav-link active text-white" href="transporte.html" alt="enlace a transportes">Transporte</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active text-white" href="sobre_mi.html">Sobre mi</a>
+                            <a class="nav-link active text-white" href="sobre_mi.html" alt="enlace a sobre mi">Sobre mi</a>
                         </li> 
                     </ul>
                 </div>
-            </div>
+            </div>                 
         </nav>
-    </header>
+    </header>                     
     <!-----------Comienzo contenido pagina, con imagenes y links------------> 
     <section>
         <main class="grillaFestividades">    
@@ -69,12 +77,12 @@
                 <div class="textoAlineado-cent">
                     <img src="../media/img/img-Fox.jpg" alt="imagen mascara japones" class="tamanoImagenes">        
                 </div> 
-                <div class="textoAlineado-cent">
+                <div class="textoAlineado-cent"  id="enero">
                     <h2 class="texto-mediano ">Desde año nuevo hasta Hanami, las fiestas Japonesas son toda una experiencia para vivir</h2>   
                 </div>
             </section>
             <!-------------Seccion con fotos,mes enero-usando grilla---------------->
-            <section class="festividades grillaEnero" id="enero">
+            <section class="festividades grillaEnero">
                 <div>
                     <h3 class="titulosSecciones bordeRojo">Festividades en Enero</h3> 
                     <p>Enero comienza con una de las festividades más importantes para los japoneses: el Año Nuevo o Shogatsu. Entre el 1 y el 4 de enero muchos negocios, tiendas y restaurantes están cerrados, algo que tendrás que tener presente a la hora de planificar tu viaje. Eso hace de enero, sin embargo, uno de los momentos perfectos para visitar Japón, porque te permitirá participar de las celebraciones populares del Año Nuevo japonés, algo muy especial.</p>     
@@ -93,7 +101,7 @@
                         <div class="fotoFs fotoFs4" alt="plato de ramen"></div>
                     </article>    
                 </div>
-                <div class="infoEnero">
+                <div class="infoEnero" id="abril">
                     <p class="texto-pequeno textoAlineado-cent" >
                         <a href="https://japonismo.com/blog/enero-mes-del-shogatsu#Festivales_y_festividades_en_enero_en_Japon" target="_blank">Pulsa aquí para conocer mas sobre fiestas en enero</a>
                     </p>     
@@ -101,7 +109,7 @@
             </section>
             <div class="asideEnero propAside" alt="castilo de osaka"></div>
             <!------------ seccion con fotos, mes abril-------usando grilla------------>
-            <section class="festividades grillaAbril seccionFestividades__abril" id="abril">
+            <section class="festividades grillaAbril seccionFestividades__abril" >
                 <div class="">
                     <h3 class="titulosSecciones bordeRojo">Festividades en Abril</h3> 
                     <p>Según el antiguo calendario japonés, el mes de abril recibía el nombre de uzuki, el «mes en el que florecen las deutzias» (o utsugi en japonés). Además puesto que 卯 (liebre en japonés) es el cuarto animal según el zodiaco japonés, también puede considerarse como el mes de la liebre. Otros nombres que recibe este mes son unohanatsuki (la forma larga de uzuki) y hananokorizuki, el «mes de los restos de las flores»..</p>     
