@@ -11,7 +11,7 @@ $base:100px;
 }
 
 .encabezado-principal__titulo--grande{
-        font-size: 40px;               
+        font-size: 2.3rem;               
 }
 
 .encabezado-principal__logo--medida{
@@ -89,7 +89,7 @@ $base:100px;
 @media only screen and (min-width: 416px) and (max-width: 966px) {
 
     .encabezado-principal__titulo--grande{
-        font-size: 30px;
+        font-size: 2rem;
         color: red;
     }
 

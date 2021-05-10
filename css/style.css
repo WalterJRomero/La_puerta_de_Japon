@@ -4,7 +4,7 @@
   margin: 2px;
   margin-bottom: 58px;
   padding: 2px;
-  grid-template-areas: ". grillaTituloIndex ." ". grillaFox  . " ". grillaFuji . "  ". grillaTren ."  ". grillaGato ." "footer footer footer";
+  grid-template-areas: "grillaTituloIndex grillaTituloIndex grillaTituloIndex" ". grillaFox  . " ". grillaFuji . "  ". grillaTren ."  ". grillaGato ." "footer footer footer";
   grid-template-columns: 2fr 2fr 2fr;
   grid-column-gap: 0px;
   justify-items: stretch;
@@ -23,10 +23,10 @@
   font-weight: bold; }
 
 .bloque-main__titulo--grande {
-  font-size: 40px; }
+  font-size: 2.7rem; }
 
 .bloque-main__descripcion {
-  font-size: 30px;
+  font-size: 2rem;
   width: auto;
   height: auto; }
 
@@ -57,9 +57,10 @@
   grid-area: grillaGato; }
 
 .seccion-card__enlace--tamano {
-  font-size: 30px;
   width: auto;
-  height: auto; }
+  height: auto;
+  font-family: "Reggae One", cursive;
+  font-size: 1.7rem; }
 
 .seccion-card__enlace--bold {
   font-weight: bold;
@@ -108,14 +109,14 @@
     margin-top: 0px;
     padding-top: 10px; }
   .bloque-main__titulo--grande {
-    font-size: 25px; }
+    font-size: 1.7rem; }
   .seccion-card__imagen {
     margin-top: 10px;
     margin-bottom: 10px; }
   .bloque-main__descripcion {
-    font-size: 20px; }
+    font-size: 1.4rem; }
   .seccion-card__enlace--tamano {
-    font-size: 20px; }
+    font-size: 1.4rem; }
   .bloque-main {
     display: flex;
     flex-flow: row wrap; } }
@@ -132,16 +133,18 @@
     margin-top: 0px;
     width: 100%; }
   .bloque-main__titulo--grande {
-    font-size: 30px; }
+    font-size: 2.4rem; }
   .seccion-card__imagen {
     margin-top: 15px;
     margin-bottom: 15px; }
   .bloque-main__descripcion {
-    font-size: 25px; }
+    font-size: 1.7rem; }
   .bloque-main {
     display: grid;
     grid-template-areas: "grillaTituloIndex" "grillaFox" "grillaFuji"  "grillaTren"  "grillaGato" "footer";
-    grid-template-columns: 3fr; } }
+    grid-template-columns: 3fr; }
+  .seccion-card__enlace--tamano {
+    font-size: 1.7rem; } }
 
 @media only screen and (min-width: 967px) {
   .seccion-card__imagen__enlace--estilo {
@@ -157,7 +160,7 @@
   color: red; }
 
 .encabezado-principal__titulo--grande {
-  font-size: 40px; }
+  font-size: 2.3rem; }
 
 .encabezado-principal__logo--medida {
   height: 100%;
@@ -222,7 +225,7 @@
 /*-----------416px a 966px--------------------------*/
 @media only screen and (min-width: 416px) and (max-width: 966px) {
   .encabezado-principal__titulo--grande {
-    font-size: 30px;
+    font-size: 2rem;
     color: red; }
   .foto-card__imagen {
     margin-top: 15px;
@@ -410,14 +413,13 @@
     width: 100%; } }
 
 * {
-  margin: 0px;
-  padding: 0px; }
+  margin: margin 0px;
+  padding: margin 0px; }
 
 /*--------------index  y diseños generales---------------*/
 body {
   background-color: #FFF3F1;
   font-family: "Nunito Sans", sans-serif, "Reggae One", cursive;
-  font-style: normal;
   font-weight: 400;
   font-size: normal;
   padding-top: 0px;
@@ -438,7 +440,7 @@ body {
 
 p {
   color: black;
-  font-weight: 3rem;
+  font-weight: 4rem;
   padding: 2px; }
 
 h1 {
@@ -501,18 +503,17 @@ section ul li {
   font-weight: bold; }
 
 .texto-grande {
-  font-size: 40px; }
+  font-size: 2.3rem; }
 
 .texto-mediano {
-  font-size: 30px;
-  width: auto;
-  height: auto; }
+  font-size: 1.7rem; }
 
 .texto-pequeno {
-  font-size: 20px; }
+  font-size: 1.2rem; }
 
 .titulosSecciones {
-  color: red; }
+  color: red;
+  font-family: "Reggae One", cursive; }
 
 .textoAlineado-izq {
   text-align: left; }
@@ -969,10 +970,8 @@ section ul li {
     margin-top: 0px; }
   p {
     color: black;
-    font-weight: bold;
     text-align: justify; }
   h1 {
-    font-weight: 12px;
     letter-spacing: normal;
     word-spacing: 2px; }
   .fondoBanner {
@@ -995,7 +994,7 @@ section ul li {
     justify-content: center;
     grid-template-columns: 1fr; }
   .texto-grande {
-    font-size: 25px; }
+    font-size: 1.7rem; }
   .fotosFestividades {
     margin-top: 10px;
     margin-bottom: 10px; }
@@ -1009,7 +1008,8 @@ section ul li {
     grid-template-areas: "gCiudades" "gTokyo "      "gKyoto"             " gNara "         "gMiyajima"       "gFooter ";
     grid-template-columns: 3fr; }
   .texto-mediano {
-    font-size: 20px; }
+    font-size: 1.3rem;
+    font-weight: bold; }
   .grow {
     transition: none; }
     .grow:hover {
@@ -1023,7 +1023,6 @@ section ul li {
 @media only screen and (min-width: 416px) and (max-width: 966px) {
   p {
     color: black;
-    font-weight: bold;
     text-align: justify; }
   h1 {
     font-weight: 25px;
@@ -1034,9 +1033,9 @@ section ul li {
     height: 60px;
     z-index: 9999; }
   .texto-grande {
-    font-size: 30px; }
+    font-size: 2rem; }
   .texto-mediano {
-    font-size: 25px; }
+    font-size: 1.5rem; }
   .festividades {
     margin: 6px;
     padding: 6px; }
@@ -1051,6 +1050,13 @@ section ul li {
     display: none; }
   .grillaCiudades {
     grid-template-areas: "gCiudades gCiudades"     "gTokyo gTokyo" "gKyoto gKyoto" "gNara gNara "        "gMiyajima gMiyajima"       "gFooter gFooter ";
+    grid-template-columns: 1fr 1fr; }
+  .grillaTransporte {
+    grid-template-areas: "tituloJr tituloJr" "fotoJr fotoJr"       "textoIc textoIc" "fotoIc fotoIc" "tituloShin tituloShin" "fotoShin fotoShin" "fotoShin fotoShin"  "tituloCole tituloCole" "fotoCole fotoCole" "tituloTaxi tituloTaxi" "fotoTaxi fotoTaxi" "tituloTren tituloTren" "fotoTren fotoTren";
+    justify-items: center;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
     grid-template-columns: 1fr 1fr; } }
 
 /*-------------------967px-------------*/

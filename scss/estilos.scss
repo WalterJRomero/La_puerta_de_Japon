@@ -16,16 +16,15 @@ $tamano-total:100%;
 @import "estilosBs";
 
 * {
-    margin:0px;
-    padding:0px;   
+    margin:$sin-margen;
+    padding:$sin-margen;   
 }
 
 /*--------------index  y diseños generales---------------*/
 
 body {
     background-color:$color-fondo;
-    font-family:$font-principal,$font-titulo; 
-    font-style:normal;
+    font-family:$font-principal,$font-titulo;   
     font-weight:400;
     font-size:normal;      
     padding-top: 0px;
@@ -49,8 +48,8 @@ body {
 
 p {
     color:$color-black;
-    font-weight: 3rem;   
-    padding:2px ;
+    font-weight: 4rem;   
+    padding:2px;     
 } 
 
 h1 {
@@ -133,21 +132,20 @@ section {
 }
 
 .texto-grande {
-    font-size: 40px;
+    font-size: 2.3rem;
 }
 
 .texto-mediano {
-    font-size: 30px;
-    width: auto;
-    height: auto;
+    font-size: 1.7rem;    
 }
 
 .texto-pequeno {
-    font-size: 20px;    
+    font-size: 1.2rem;    
 }
 
 .titulosSecciones {
     color:$color-titulo;
+    font-family: $font-titulo;
 }
 
 .textoAlineado-izq {
@@ -218,8 +216,7 @@ section {
    display:flex; 
    flex-flow:nowrap column;
    justify-content: space-around;
-   flex-basis: 100px;
-  
+   flex-basis: 100px;  
 }
 
 .fotosFestividades {
@@ -469,7 +466,7 @@ section {
 }
 
 .grillaFotosCole {
-    grid-area:fotoCole
+    grid-area:fotoCole    
 }
 .grillaTituloTaxi{
     grid-area:tituloTaxi;
@@ -768,13 +765,11 @@ section {
     }
 
     p{
-        color:black;
-        font-weight: bold;
+        color:black;        
         text-align: justify;  
     }
 
-    h1 {      
-        font-weight: 12px;
+    h1 {   
         letter-spacing: normal;
         word-spacing: 2px;      
     }
@@ -822,7 +817,7 @@ section {
     } 
  
     .texto-grande{
-        font-size: 25px;
+        font-size: 1.7rem;
     }
      
     .fotosFestividades {
@@ -860,7 +855,8 @@ section {
     }  
 
     .texto-mediano {
-        font-size: 20px;
+        font-size: 1.3rem;
+        font-weight: bold;
     }
 
     .grow { 
@@ -883,8 +879,7 @@ section {
 
 @media only screen and (min-width: 416px) and (max-width: 966px) {
     p{
-        color: black;
-        font-weight: bold;        
+        color: black;              
         text-align: justify;        
     }
     
@@ -901,11 +896,11 @@ section {
     }
 
     .texto-grande {
-        font-size:30px;
+        font-size:2rem;
     }
 
     .texto-mediano {
-        font-size:25px;
+        font-size:1.5rem;
     }
 
     .festividades {
@@ -945,6 +940,29 @@ section {
         "gMiyajima gMiyajima"      
         "gFooter gFooter ";      
         grid-template-columns:1fr 1fr;   
+    } 
+
+    .grillaTransporte {
+        grid-template-areas:
+        "tituloJr tituloJr"
+        "fotoJr fotoJr"      
+        "textoIc textoIc"
+        "fotoIc fotoIc"
+        "tituloShin tituloShin"
+        "fotoShin fotoShin"
+        "fotoShin fotoShin"
+          
+        "tituloCole tituloCole"
+        "fotoCole fotoCole"
+        "tituloTaxi tituloTaxi"
+        "fotoTaxi fotoTaxi"
+        "tituloTren tituloTren"
+        "fotoTren fotoTren";
+        justify-items:center; 
+        align-content:center;  
+        align-items:center; 
+        justify-content:center;
+        grid-template-columns: 1fr 1fr; 
     } 
 }    
 /*-------------------967px-------------*/
