@@ -86,8 +86,8 @@
   border-radius: 30%;
   border: red 2px solid; }
 
-.seccion-card__imagen__enlace--fox {
-  background-image: url("../media/img/img-fox.jpg"); }
+.seccion-card__imagen__enlace--Fox {
+  background-image: url("../media/img/img-Fox.jpg"); }
 
 .seccion-card__imagen__enlace--fuji {
   background-image: url("../media/img/img-fuji.jpg"); }
@@ -199,17 +199,17 @@
   border-radius: 5%;
   border: black 1px solid; }
 
-.foto-card__imagen--buda {
-  background-image: url("../media/img/sobremi-buda.jpg"); }
+.foto-card__imagen--Buda {
+  background-image: url("../media/img/sobremi-Buda.jpg"); }
 
-.foto-card__imagen--puerta {
-  background-image: url("../media/img/sobremi-puerta.jpg"); }
+.foto-card__imagen--Puerta {
+  background-image: url("../media/img/sobremi-Puerta.jpg"); }
 
-.foto-card__imagen--nieve {
-  background-image: url("../media/img/sobremi-nieve.jpg"); }
+.foto-card__imagen--Nieve {
+  background-image: url("../media/img/sobremi-Nieve.jpg"); }
 
-.foto-card__imagen--31dic {
-  background-image: url("../media/img/sobremi-31dic.jpg"); }
+.foto-card__imagen--Dic {
+  background-image: url("../media/img/sobremi-Dic.jpg"); }
 
 .foto-card__descripcion {
   text-align: center;
