@@ -48,21 +48,11 @@ $base:100px;
         border-radius: 5%;
         border: black 1px solid;         
 }
-@each $img in buda,puerta{
+@each $img in buda,puerta,nieve,diciembre{
         .foto-card__imagen--#{$img} { 
             background-image:url('../media/img/sobremi-#{$img}.jpg');
         }
 }
-
-.foto-card__imagen--nieve{
-        background-image:url("../media/img/nieve.JPG");
-}
-
-.foto-card__imagen--diciembre{
-        background-image: url("../media/img/diciembre.JPG");
-}
-
-
 .foto-card__descripcion {
         text-align:$alineado; 
         margin:5px 0px;

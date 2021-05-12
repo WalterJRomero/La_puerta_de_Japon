@@ -96,7 +96,7 @@
   background-image: url("../media/img/img-nekko.jpg"); }
 
 .seccion-card__imagen__enlace--foxx {
-  background-image: url("../media/img/foxx.jpg"); }
+  background-image: url("../media/img/img-foxx.jpg"); }
 
 @media only screen and (max-width: 415px) {
   .seccion-card__imagen__enlace--estilo {
@@ -206,10 +206,10 @@
   background-image: url("../media/img/sobremi-puerta.jpg"); }
 
 .foto-card__imagen--nieve {
-  background-image: url("../media/img/nieve.JPG"); }
+  background-image: url("../media/img/sobremi-nieve.jpg"); }
 
 .foto-card__imagen--diciembre {
-  background-image: url("../media/img/diciembre.JPG"); }
+  background-image: url("../media/img/sobremi-diciembre.jpg"); }
 
 .foto-card__descripcion {
   text-align: center;
