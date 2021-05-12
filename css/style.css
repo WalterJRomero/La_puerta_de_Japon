@@ -482,19 +482,6 @@ section ul li {
   border-radius: 20%;
   background-color: red; }
 
-/*---------------imagenes de cada logo de pagina -----*/
-.imagenFox {
-  background-image: url("../media/img/img-Fox.jpg"); }
-
-.imagenFuji {
-  background-image: url("../media/img/img-fuji.jpg"); }
-
-.imagenTren {
-  background-image: url("../media/img/img-tren.jpg"); }
-
-.imagenGato {
-  background-image: url("../media/img/img-nekko.jpg"); }
-
 /*--------------estilos que uso en todo el sitio y sus media---------*/
 .negrita {
   font-weight: bold; }
@@ -587,29 +574,28 @@ section ul li {
   border-radius: 5%;
   border: black 1px solid; }
 
-.fotoFs1 {
-  background-image: url("../media/img/festividades-enero1.jpg");
-  flex-grow: 1; }
+.fotoFsEnero1 {
+  background-image: url("../media/img/festividades-enero1.jpg"); }
 
-.fotoFs2 {
+.fotoFsEnero2 {
   background-image: url("../media/img/festividades-enero2.jpg"); }
 
-.fotoFs3 {
+.fotoFsEnero3 {
   background-image: url("../media/img/festividades-enero3.jpg"); }
 
-.fotoFs4 {
+.fotoFsEnero4 {
   background-image: url("../media/img/festividades-enero4.jpg"); }
 
-.fotoFs6 {
+.fotoFsAbril1 {
   background-image: url("../media/img/festividades-abril1.jpg"); }
 
-.fotoFs7 {
+.fotoFsAbril2 {
   background-image: url("../media/img/festividades-abril2.jpg"); }
 
-.fotoFs8 {
+.fotoFsAbril3 {
   background-image: url("../media/img/festividades-abril3.jpg"); }
 
-.fotoFs9 {
+.fotoFsAbril4 {
   background-image: url("../media/img/festividades-abril4.jpg"); }
 
 .fotoGrow {
@@ -664,50 +650,49 @@ section ul li {
   margin-bottom: 50px; }
 
 /*-------------------- fotos de seccion transporte-----------------*/
-.fotoJrEstandar {
-  background-image: url("../media/img/transporte-jrpassestandar.jpg"); }
+.fotoJrPassEstandar {
+  background-image: url("../media/img/transporte-JrPassEstandar.jpg"); }
 
 .fotoJrGreen {
-  background-image: url("../media/img/transporte-jrgreen.jpg"); }
+  background-image: url("../media/img/transporte-JrGreen.jpg"); }
 
-.fotoIcoca {
-  background-image: url("../media/img/transporte-icicoca.jpg");
+.fotoIcIcoca {
+  background-image: url("../media/img/transporte-IcIcoca.jpg");
   background-size: 95%; }
 
-.fotoSuica {
-  background-image: url("../media/img/transporte-icsuica.jpg");
+.fotoIcSuica {
+  background-image: url("../media/img/transporte-IcSuica.jpg");
   background-size: 95%; }
 
-.fotoShinkansen {
+.fotoShinkansen1 {
   background-image: url("../media/img/transporte-shinkansen1.jpg"); }
 
-.fotoShinkansenGreen {
+.fotoShinkansen2 {
   background-image: url("../media/img/transporte-shinkansen2.jpg"); }
 
-.fotoShinkansenYellow {
+.fotoShinkansen3 {
   background-image: url("../media/img/transporte-shinkansen3.jpg"); }
 
-.fotoShinkansenEva {
-  background-image: url("../media/img/transporte-shinkansen4.jpg");
-  flex-grow: 1; }
+.fotoShinkansen4 {
+  background-image: url("../media/img/transporte-shinkansen4.jpg"); }
 
-.fotoTrenLocal1 {
-  background-image: url("../media/img/transporte-trenjr.jpg"); }
+.fotoTrenJr {
+  background-image: url("../media/img/transporte-TrenJr.jpg"); }
 
-.fotoTrenLocal2 {
-  background-image: url("../media/img/transporte-trenpikachu.jpg"); }
+.fotoTrenPikachu {
+  background-image: url("../media/img/transporte-TrenPikachu.jpg"); }
+
+.fotoBusGhibli {
+  background-image: url("../media/img/transporte-BusGhibli.jpg"); }
+
+.fotoBusJapan {
+  background-image: url("../media/img/transporte-BusJapan.jpg"); }
 
 .fotoTaxi1 {
-  background-image: url("../media/img//transporte-taxi1.jpg"); }
+  background-image: url("../media/img/transporte-taxi1.jpg"); }
 
 .fotoTaxi2 {
   background-image: url("../media/img/transporte-taxi2.jpg"); }
-
-.fotoCole1 {
-  background-image: url("../media/img/transporte-busghibli.jpeg"); }
-
-.fotoCole2 {
-  background-image: url("../media/img/transporte-busjapan.jpg"); }
 
 .grillaTransporte {
   display: grid;

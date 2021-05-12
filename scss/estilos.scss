@@ -92,19 +92,6 @@ section {
     border-radius: 20%;
     background-color: $color-titulo;
 }
-/*---------------imagenes de cada logo de pagina -----*/
-.imagenFox {
-    background-image: url("../media/img/img-Fox.jpg"); 
-}
-.imagenFuji {
-    background-image: url("../media/img/img-fuji.jpg");
-}
-.imagenTren {
-    background-image: url("../media/img/img-tren.jpg");
-}
-.imagenGato {
-    background-image: url("../media/img/img-nekko.jpg");
-}
 /*--------------estilos que uso en todo el sitio y sus media---------*/
 .negrita {
     font-weight: bold;
@@ -200,30 +187,15 @@ section {
     border-radius: 5%;    
     border: black 1px solid;      
 }
-.fotoFs1 {
-    background-image: url("../media/img/festividades-enero1.jpg");
-    flex-grow: 1;
+@for $i from 1 through 4 {
+    .fotoFsEnero#{$i} { 
+        background-image: url('../media/img/festividades-enero#{$i}.jpg');
+    }
 }
-.fotoFs2 {
-    background-image: url("../media/img/festividades-enero2.jpg");
-}
-.fotoFs3 {
-    background-image: url("../media/img/festividades-enero3.jpg");
-}
-.fotoFs4 {
-    background-image: url("../media/img/festividades-enero4.jpg");
-}
-.fotoFs6 {
-    background-image: url("../media/img/festividades-abril1.jpg");
-}
-.fotoFs7 {
-    background-image: url("../media/img/festividades-abril2.jpg");
-}
-.fotoFs8 {
-    background-image: url("../media/img/festividades-abril3.jpg");
-}
-.fotoFs9 {
-    background-image: url("../media/img/festividades-abril4.jpg");
+@for $i from 1 through 4 {
+    .fotoFsAbril#{$i} { 
+        background-image: url('../media/img/festividades-abril#{$i}.jpg');
+    }
 }
 .fotoGrow {
     flex-grow:1;
@@ -280,51 +252,33 @@ section {
     margin-bottom: 50px;   
 }  
 /*-------------------- fotos de seccion transporte-----------------*/
-.fotoJrEstandar {
-    background-image: url("../media/img/transporte-jrpassestandar.jpg");
-}
-.fotoJrGreen {
-    background-image: url("../media/img/transporte-jrgreen.jpg");
+@each $img in JrPassEstandar,JrGreen,IcIcoca,IcSuica {
+    .foto#{$img} { 
+        background-image:url('../media/img/transporte-#{$img}.jpg');
+    
+    @if $img == IcIcoca {
+         background-size: 95%;
+    };
+        @if $img == IcSuica {
+         background-size: 95%;
+        }
+    }
 } 
-.fotoIcoca {
-    background-image: url("../media/img/transporte-icicoca.jpg");
-    background-size: 95%;
+@for $i from 1 through 4 {
+    .fotoShinkansen#{$i} { 
+        background-image: url('../media/img/transporte-shinkansen#{$i}.jpg');
+    }
 }
-.fotoSuica {
-    background-image: url("../media/img/transporte-icsuica.jpg");
-    background-size: 95%;        
+@each $img in TrenJr,TrenPikachu,BusGhibli,BusJapan {
+    .foto#{$img} { 
+        background-image:url('../media/img/transporte-#{$img}.jpg');
+    }
 }
-.fotoShinkansen {
-    background-image: url("../media/img/transporte-shinkansen1.jpg");
+@for $i from 1 through 2 {
+    .fotoTaxi#{$i} { 
+        background-image: url('../media/img/transporte-taxi#{$i}.jpg');
+    }
 }
-.fotoShinkansenGreen{
-    background-image: url("../media/img/transporte-shinkansen2.jpg");    
-}
-.fotoShinkansenYellow {
-    background-image:url("../media/img/transporte-shinkansen3.jpg");   
-}
-.fotoShinkansenEva {
-    background-image: url("../media/img/transporte-shinkansen4.jpg");  
-    flex-grow: 1;   
-}
-.fotoTrenLocal1 {
-    background-image: url("../media/img/transporte-trenjr.jpg");
-}
-.fotoTrenLocal2 {
-    background-image: url("../media/img/transporte-trenpikachu.jpg");
-}
-.fotoTaxi1 {
-    background-image: url("../media/img//transporte-taxi1.jpg");
-}
-.fotoTaxi2 {
-    background-image: url("../media/img/transporte-taxi2.jpg");
-}
-.fotoCole1{
-    background-image: url("../media/img/transporte-busghibli.jpeg");
-}
-.fotoCole2 {
-    background-image: url("../media/img/transporte-busjapan.jpg");
-} 
 .grillaTransporte{    
     display: grid;
     grid-template-areas:     
@@ -570,41 +524,25 @@ section {
     align-content: center;    
     padding: 0.5rem;
 }
-.fotoTk1 {
-    background-image: url("../media/img/ciudades-tokyo1.jpg");     
+@for $i from 1 through 3 {
+    .fotoTk#{$i} { 
+        background-image: url('../media/img/ciudades-tokyo#{$i}.jpg');
+    }
 }
-.fotoTk2 {
-    background-image: url("../media/img/ciudades-tokyo2.jpg");     
+@for $i from 1 through 3 {
+    .fotoKy#{$i} { 
+        background-image: url('../media/img/ciudades-kyoto#{$i}.jpg');
+    }
 }
-.fotoTk3 {
-    background-image: url("../media/img/ciudades-tokyo3.jpg");     
+@for $i from 1 through 3 {
+    .fotoN#{$i} { 
+        background-image: url('../media/img/ciudades-nara#{$i}.jpg');
+    }
 }
-.fotoKy1 {
-    background-image: url("../media/img/ciudades-kyoto1.jpg");     
-}
-.fotoKy2 {
-    background-image: url("../media/img/ciudades-kyoto2.jpg");     
-}
-.fotoKy3 {
-    background-image: url("../media/img/ciudades-kyoto3.jpg");     
-}
-.fotoN1 {
-    background-image: url("../media/img/ciudades-nara1.jpg");     
-}
-.fotoN2 {
-    background-image: url("../media/img/ciudades-nara2.jpg");     
-}
-.fotoN3 {
-    background-image: url("../media/img/ciudades-nara3.jpg");     
-}
-.fotoM1 {
-    background-image: url("../media/img/ciudades-miyajima1.jpg");     
-}
-.fotoM2 {
-    background-image: url("../media/img/ciudades-miyajima2.jpg");     
-}
-.fotoM3 {
-    background-image: url("../media/img/ciudades-miyajima3.jpg");     
+@for $i from 1 through 3 {
+    .fotoM#{$i} { 
+        background-image: url('../media/img/ciudades-miyajima#{$i}.jpg');
+    }
 }
 /*-------------------------medias-------------------------*/
 /*------hasta 415px--------------------------------------*/
