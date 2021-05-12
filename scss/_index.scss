@@ -100,10 +100,14 @@ $font-titulo:'Reggae One', cursive;
     border-radius: 30%;
     border: red 2px solid;
 }
-@each $img in foxx,fuji,tren,nekko {
+@each $img in fuji,tren,nekko {
     .seccion-card__imagen__enlace--#{$img} { 
         background-image:url('../media/img/img-#{$img}.jpg');
     }
+}
+
+.seccion-card__imagen__enlace--foxx{
+    background-image: url("../media/img/foxx.jpg");
 }
 //--------------------MEDIAS----------------
 @media only screen and (max-width: 415px) {
