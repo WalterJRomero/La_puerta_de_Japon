@@ -87,7 +87,7 @@
   border: red 2px solid; }
 
 .seccion-card__imagen__enlace--fox {
-  background-image: url("../media/img/img-Fox.jpg"); }
+  background-image: url("../media/img/img-fox.jpg"); }
 
 .seccion-card__imagen__enlace--fuji {
   background-image: url("../media/img/img-fuji.jpg"); }
@@ -95,7 +95,7 @@
 .seccion-card__imagen__enlace--tren {
   background-image: url("../media/img/img-tren.jpg"); }
 
-.seccion-card__imagen__enlace--gato {
+.seccion-card__imagen__enlace--nekko {
   background-image: url("../media/img/img-nekko.jpg"); }
 
 @media only screen and (max-width: 415px) {
@@ -199,18 +199,17 @@
   border-radius: 5%;
   border: black 1px solid; }
 
-.foto-card__imagen--foto1 {
+.foto-card__imagen--buda {
   background-image: url("../media/img/sobremi-buda.jpg"); }
 
-.foto-card__imagen--foto2 {
+.foto-card__imagen--puerta {
   background-image: url("../media/img/sobremi-puerta.jpg"); }
 
-.foto-card__imagen--foto3 {
-  background-image: url("../media/img/sobremi-nieve.JPG"); }
+.foto-card__imagen--nieve {
+  background-image: url("../media/img/sobremi-nieve.jpg"); }
 
-.foto-card__imagen--foto4 {
-  background-image: url("../media/img/sobremi-31dic.JPG");
-  background-size: cover; }
+.foto-card__imagen--31dic {
+  background-image: url("../media/img/sobremi-31dic.jpg"); }
 
 .foto-card__descripcion {
   text-align: center;

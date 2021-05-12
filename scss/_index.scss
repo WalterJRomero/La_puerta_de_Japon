@@ -100,18 +100,11 @@ $font-titulo:'Reggae One', cursive;
     border-radius: 30%;
     border: red 2px solid;
 }
-.seccion-card__imagen__enlace--fox{
-    background-image: url("../media/img/img-Fox.jpg");}
-
-.seccion-card__imagen__enlace--fuji{
-    background-image: url("../media/img/img-fuji.jpg");}
-
-.seccion-card__imagen__enlace--tren{
-    background-image: url("../media/img/img-tren.jpg");}
-
-.seccion-card__imagen__enlace--gato{
-    background-image: url("../media/img/img-nekko.jpg");}
-
+@each $img in fox,fuji,tren,nekko {
+    .seccion-card__imagen__enlace--#{$img} { 
+        background-image:url('../media/img/img-#{$img}.jpg');
+    }
+}
 //--------------------MEDIAS----------------
 @media only screen and (max-width: 415px) {
     .seccion-card__imagen__enlace--estilo{

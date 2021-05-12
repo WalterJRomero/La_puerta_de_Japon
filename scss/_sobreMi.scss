@@ -48,18 +48,10 @@ $base:100px;
         border-radius: 5%;
         border: black 1px solid;         
 }
-.foto-card__imagen--foto1{
-        background-image: url("../media/img/sobremi-buda.jpg");
-}
-.foto-card__imagen--foto2{
-        background-image: url("../media/img/sobremi-puerta.jpg");
-}
-.foto-card__imagen--foto3{
-        background-image: url("../media/img/sobremi-nieve.JPG");
-}
-.foto-card__imagen--foto4{
-        background-image: url("../media/img/sobremi-31dic.JPG");
-        background-size: cover;        
+@each $img in buda,puerta,nieve,31dic {
+        .foto-card__imagen--#{$img} { 
+            background-image:url('../media/img/sobremi-#{$img}.jpg');
+        }
 }
 .foto-card__descripcion {
         text-align:$alineado; 
