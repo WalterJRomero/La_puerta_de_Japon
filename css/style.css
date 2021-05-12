@@ -496,9 +496,6 @@ section ul li {
   background-image: url("../media/img/img-nekko.jpg"); }
 
 /*--------------estilos que uso en todo el sitio y sus media---------*/
-.italica {
-  font-style: italic; }
-
 .negrita {
   font-weight: bold; }
 
@@ -714,7 +711,7 @@ section ul li {
 
 .grillaTransporte {
   display: grid;
-  grid-template-areas: "tituloJr tituloJr fotoJr"  "textoIc textoIc   fotoIc"  "tituloShin tituloShin tituloShin"    "fotoShin fotoShin   fotoShin"  "tituloCole tituloCole fotoCole"  "tituloTaxi tituloTaxi fotoTaxi"  "tituloTren tituloTren fotoTren";
+  grid-template-areas: "tituloJr tituloJr fotoJr" "textoIc textoIc   fotoIc"     "tituloShin tituloShin tituloShin"    "fotoShin fotoShin   fotoShin"    "tituloCole tituloCole fotoCole"  "tituloTaxi tituloTaxi fotoTaxi"        "tituloTren tituloTren fotoTren";
   grid-template-columns: 4fr 1fr;
   grid-template-rows: max-content;
   grid-row-gap: 50px;
@@ -793,7 +790,7 @@ section ul li {
 /*---------------grilla de seccion festividades -----*/
 .grillaFestividades {
   display: grid;
-  grid-template-areas: "gFestividades gFestividades gFestividades gFestividades"  "gEnero gEnero gEnero aEnero"  "fEnero fEnero fEnero aEnero"  "iEnero iEnero iEnero aEnero"  "gAbril gAbril gAbril aAbril"   "fAbril fAbril fAbril aAbril"  "iAbril iAbril iAbril aAbril"     "gFooter gFooter gFooter gFooter";
+  grid-template-areas: "gFestividades gFestividades gFestividades gFestividades" "gEnero gEnero gEnero aEnero" "fEnero fEnero fEnero aEnero"     "iEnero iEnero iEnero aEnero" "gAbril gAbril gAbril aAbril"  "fAbril fAbril fAbril aAbril" "iAbril iAbril iAbril aAbril" "gFooter gFooter gFooter gFooter";
   grid-template-columns: 3fr 3fr 3fr 1.6fr;
   grid-column-gap: 2px;
   justify-items: stretch;
@@ -914,7 +911,7 @@ section ul li {
 
 .grillaCiudades {
   display: grid;
-  grid-template-areas: "gCiudades gCiudades gCiudades gCiudades"  "gTokyo gTokyo gTokyo mTokyo"  "gTokyo gTokyo gTokyo aTokyo"  "mKyoto gKyoto gKyoto gKyoto"      "aKyoto gKyoto gKyoto gKyoto"      "gNara gNara gNara mNara"  "gNara gNara gNara aNara"  "mMiyajima gMiyajima gMiyajima gMiyajima"  "aMiyajima gMiyajima gMiyajima gMiyajima"   "gFooter gFooter gFooter gFooter";
+  grid-template-areas: "gCiudades gCiudades gCiudades gCiudades"     "gTokyo gTokyo gTokyo mTokyo"    "gTokyo gTokyo gTokyo aTokyo"        "mKyoto gKyoto gKyoto gKyoto" "aKyoto gKyoto gKyoto gKyoto" "gNara gNara gNara mNara" "gNara gNara gNara aNara"         "mMiyajima gMiyajima gMiyajima gMiyajima" "aMiyajima gMiyajima gMiyajima gMiyajima" "gFooter gFooter gFooter gFooter";
   grid-template-columns: 2fr 2fr 2fr 2fr;
   grid-column-gap: 2px;
   row-gap: 60px;
@@ -1052,7 +1049,7 @@ section ul li {
     grid-template-areas: "gCiudades gCiudades"     "gTokyo gTokyo" "gKyoto gKyoto" "gNara gNara "        "gMiyajima gMiyajima"       "gFooter gFooter ";
     grid-template-columns: 1fr 1fr; }
   .grillaTransporte {
-    grid-template-areas: "tituloJr tituloJr" "fotoJr fotoJr"       "textoIc textoIc" "fotoIc fotoIc" "tituloShin tituloShin" "fotoShin fotoShin" "fotoShin fotoShin"  "tituloCole tituloCole" "fotoCole fotoCole" "tituloTaxi tituloTaxi" "fotoTaxi fotoTaxi" "tituloTren tituloTren" "fotoTren fotoTren";
+    grid-template-areas: "tituloJr tituloJr" "fotoJr fotoJr"       "textoIc textoIc" "fotoIc fotoIc" "tituloShin tituloShin" "fotoShin fotoShin" "fotoShin fotoShin"           "tituloCole tituloCole" "fotoCole fotoCole" "tituloTaxi tituloTaxi" "fotoTaxi fotoTaxi" "tituloTren tituloTren" "fotoTren fotoTren";
     justify-items: center;
     align-content: center;
     align-items: center;

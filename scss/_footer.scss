@@ -15,13 +15,10 @@ $color-iconos:(
    youtube:$color-youtube, 
    instagram:$color-instagram,
 );
-
 $color-fuente-alterna: darkgray !default;
 $color-fuente-default:black !default;
 $color-fuente-alerta:red !default;
 $negrita:bold;
-
-
 //--------------- estilos de mi footer-------------
 .footer {
     background-image:linear-gradient($color-fondo,$color-principal);
@@ -34,17 +31,14 @@ $negrita:bold;
     flex-flow: row wrap;
     justify-content: space-evenly;  
     grid-area:gFooter;    
-    padding-bottom:10px
-    
+    padding-bottom:10px    
 }
 //--------------paginas sugeridas----------------------
-
 .footer-sugeridas{
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
 }
-
 @if $color-redes-principal == contraste{
     
     .footer-sugeridas__boton{
@@ -59,21 +53,17 @@ $negrita:bold;
         color:$color-fondo
     }
 }
-
 //--------------iconos de redes-utilizando maps y condicional------
-
 .footer-iconos__redes{
     display: flex; 
     align-items: center;
 }
-
 .footer-iconos__enlace{     
     margin:0px 2px;
     font-size: 1.4em;
     color: black;
     text-decoration: none;
 }
-
 .footer-iconos__enlace:hover{
     color:black;    
 }
@@ -114,27 +104,20 @@ $negrita:bold;
         }
     }
 }
-
 //---pequeño--mapa del sitio con condicional if para colores de enlaces-----------
-
 .footer-mapa{
     display: flex;  
 }
-
-.footer-mapa__lista{    
-    
+.footer-mapa__lista{     
     text-align:center;    
     font-size: 1.1rem;
     padding-left:0rem;
 }
 .footer-mapa__lista__item{
-
     letter-spacing:normal;    
     word-spacing:normal;    
 }
-
 .footer-mapa__enlace{
-
     font-weight:$negrita;
     text-decoration: none;
 
@@ -151,43 +134,36 @@ $negrita:bold;
         color:$color-fuente-alerta;
     }
 }
-
 //-----------------------medias-----------------------------------
-
 @media only screen and (max-width: 415px) {
     .footer {        
         flex-flow: column;
         justify-content: center;
         align-items: center;    
         justify-items: center;    
-    }
-    
+    }    
     .footer-iconos__redes{
         display: flex;
         flex-flow:row;
-        align-items: center;}
+        align-items: center;
+    }
 }
-
 @media only screen and (min-width: 416px) and (max-width: 966px) {
     .footer {
         flex-flow:column;
         justify-content: center;
         align-items: center;
-    } 
-    
+    }     
     .footer-iconos__redes{        
         flex-flow:row;        
     }
 }
-
 @media only screen and (min-width: 967px) {
-
     .footer {
         background-image:linear-gradient(#FFF3F1,tomato );
         width: $tamano-total;     
         flex-flow: row wrap;      
-        }
-
+    }
     .footer-iconos__redes{        
         flex-flow:column;        
     }

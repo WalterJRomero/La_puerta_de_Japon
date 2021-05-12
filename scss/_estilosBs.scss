@@ -8,13 +8,10 @@ $font-titulo:'Reggae One', cursive;
 $sin-margen:margin 0px;
 $tamano-total:100%;
 $valor:.475rem;
-
 /*-------------clases de bootstrap------------------------------*/
-
 .btn {
     margin:$valor;
 }
-
 .navbar {
     height: max-content;
     border: tomato 2px solid;
@@ -28,7 +25,6 @@ $valor:.475rem;
         align-items: flex-end;
     }
 }
-
 .navbar-nav {
     
     li {
@@ -41,28 +37,19 @@ $valor:.475rem;
         }        
     }
 }
-
-
 .dropdown-item:hover {
     background-color:black;
 }
-
 .navbar-toggler {
     background-color: white;
 }
-
 .row {
     margin:3px;
     margin-bottom:5px;
 }
-
-
 .btn-outline-dark:hover{
     border: red 1px solid;  
 }
-
-
-
 //-----------clases bs modificadas-for---la primer clase la uso! las demas son de pruebas-------------
 
 @for $boton from 1 through 4{
@@ -70,38 +57,29 @@ $valor:.475rem;
         margin:$valor*$boton;
     }
 }
-
 //----------------modifico el radio de las imagenes thumbnail usando mapas
-
 $radio1:3%;
 $radio2:6%;
 $radio3:9%;
-
 $radios:(
     radio1:$radio1,
     radio2:$radio2,
     radio3:$radio3,
 );
-
 @each  $resultado, $radio-buscado in $radios{
 
     .img-thumbnail--#{$resultado} {
         border-radius: $radio-buscado;
     }
 }
-
 //-----------utilizado each para modificar la clase--------------
-
 @each $borde in solid,dotted,dashed,double {
     
     .border--#{$borde}{
        border:2px $borde blue !important;
        background-color: transparent !important;
-
     }
  }
-
-
  @media only screen and (max-width: 415px) {
     
    .navbar-nav {
