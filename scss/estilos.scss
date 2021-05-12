@@ -252,14 +252,14 @@ section {
     margin-bottom: 50px;   
 }  
 /*-------------------- fotos de seccion transporte-----------------*/
-@each $img in JrPassEstandar,JrGreen,IcIcoca,IcSuica {
+@each $img in jrpassestandar,jrgreen,icicoca,icsuica {
     .foto#{$img} { 
         background-image:url('../media/img/transporte-#{$img}.jpg');
     
-    @if $img == IcIcoca {
+    @if $img == icicoca {
          background-size: 95%;
     };
-        @if $img == IcSuica {
+        @if $img == icsuica {
          background-size: 95%;
         }
     }
@@ -269,7 +269,7 @@ section {
         background-image: url('../media/img/transporte-shinkansen#{$i}.jpg');
     }
 }
-@each $img in TrenJr,TrenPikachu,BusGhibli,BusJapan {
+@each $img in trenjr,trenpikachu,busghibli,busjapan {
     .foto#{$img} { 
         background-image:url('../media/img/transporte-#{$img}.jpg');
     }

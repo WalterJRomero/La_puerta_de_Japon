@@ -86,8 +86,8 @@
   border-radius: 30%;
   border: red 2px solid; }
 
-.seccion-card__imagen__enlace--Fox {
-  background-image: url("../media/img/img-Fox.jpg"); }
+.seccion-card__imagen__enlace--fox {
+  background-image: url("../media/img/img-fox.jpg"); }
 
 .seccion-card__imagen__enlace--fuji {
   background-image: url("../media/img/img-fuji.jpg"); }
@@ -199,17 +199,17 @@
   border-radius: 5%;
   border: black 1px solid; }
 
-.foto-card__imagen--Buda {
-  background-image: url("../media/img/sobremi-Buda.jpg"); }
+.foto-card__imagen--buda {
+  background-image: url("../media/img/sobremi-buda.jpg"); }
 
-.foto-card__imagen--Puerta {
-  background-image: url("../media/img/sobremi-Puerta.jpg"); }
+.foto-card__imagen--puerta {
+  background-image: url("../media/img/sobremi-puerta.jpg"); }
 
-.foto-card__imagen--Nieve {
-  background-image: url("../media/img/sobremi-Nieve.jpg"); }
+.foto-card__imagen--nieve {
+  background-image: url("../media/img/sobremi-nieve.jpg"); }
 
-.foto-card__imagen--Dic {
-  background-image: url("../media/img/sobremi-Dic.jpg"); }
+.foto-card__imagen--dic {
+  background-image: url("../media/img/sobremi-dic.jpg"); }
 
 .foto-card__descripcion {
   text-align: center;
@@ -649,18 +649,18 @@ section ul li {
   margin-bottom: 50px; }
 
 /*-------------------- fotos de seccion transporte-----------------*/
-.fotoJrPassEstandar {
-  background-image: url("../media/img/transporte-JrPassEstandar.jpg"); }
+.fotojrpassestandar {
+  background-image: url("../media/img/transporte-jrpassestandar.jpg"); }
 
-.fotoJrGreen {
-  background-image: url("../media/img/transporte-JrGreen.jpg"); }
+.fotojrgreen {
+  background-image: url("../media/img/transporte-jrgreen.jpg"); }
 
-.fotoIcIcoca {
-  background-image: url("../media/img/transporte-IcIcoca.jpg");
+.fotoicicoca {
+  background-image: url("../media/img/transporte-icicoca.jpg");
   background-size: 95%; }
 
-.fotoIcSuica {
-  background-image: url("../media/img/transporte-IcSuica.jpg");
+.fotoicsuica {
+  background-image: url("../media/img/transporte-icsuica.jpg");
   background-size: 95%; }
 
 .fotoShinkansen1 {
@@ -675,17 +675,17 @@ section ul li {
 .fotoShinkansen4 {
   background-image: url("../media/img/transporte-shinkansen4.jpg"); }
 
-.fotoTrenJr {
-  background-image: url("../media/img/transporte-TrenJr.jpg"); }
+.fototrenjr {
+  background-image: url("../media/img/transporte-trenjr.jpg"); }
 
-.fotoTrenPikachu {
-  background-image: url("../media/img/transporte-TrenPikachu.jpg"); }
+.fototrenpikachu {
+  background-image: url("../media/img/transporte-trenpikachu.jpg"); }
 
-.fotoBusGhibli {
-  background-image: url("../media/img/transporte-BusGhibli.jpg"); }
+.fotobusghibli {
+  background-image: url("../media/img/transporte-busghibli.jpg"); }
 
-.fotoBusJapan {
-  background-image: url("../media/img/transporte-BusJapan.jpg"); }
+.fotobusjapan {
+  background-image: url("../media/img/transporte-busjapan.jpg"); }
 
 .fotoTaxi1 {
   background-image: url("../media/img/transporte-taxi1.jpg"); }
