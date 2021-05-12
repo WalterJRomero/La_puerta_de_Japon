@@ -100,7 +100,7 @@ $font-titulo:'Reggae One', cursive;
     border-radius: 30%;
     border: red 2px solid;
 }
-@each $img in fox,fuji,tren,nekko {
+@each $img in foxx,fuji,tren,nekko {
     .seccion-card__imagen__enlace--#{$img} { 
         background-image:url('../media/img/img-#{$img}.jpg');
     }

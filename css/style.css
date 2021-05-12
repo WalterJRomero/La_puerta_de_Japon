@@ -86,8 +86,8 @@
   border-radius: 30%;
   border: red 2px solid; }
 
-.seccion-card__imagen__enlace--fox {
-  background-image: url("../media/img/img-fox.jpg"); }
+.seccion-card__imagen__enlace--foxx {
+  background-image: url("../media/img/img-foxx.jpg"); }
 
 .seccion-card__imagen__enlace--fuji {
   background-image: url("../media/img/img-fuji.jpg"); }
@@ -208,8 +208,8 @@
 .foto-card__imagen--nieve {
   background-image: url("../media/img/sobremi-nieve.jpg"); }
 
-.foto-card__imagen--dic {
-  background-image: url("../media/img/sobremi-dic.jpg"); }
+.foto-card__imagen--diciembre {
+  background-image: url("../media/img/sobremi-diciembre.jpg"); }
 
 .foto-card__descripcion {
   text-align: center;
