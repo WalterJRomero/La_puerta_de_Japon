@@ -279,8 +279,7 @@
   color: red; }
 
 .footer-iconos__enlace--instagram {
-  color: purple;
-  font-size: 2em; }
+  color: purple; }
 
 .footer-mapa {
   display: flex; }
@@ -481,7 +480,20 @@ section ul li {
   border-radius: 20%;
   background-color: red; }
 
-/*--------------estilos que uso en todo el sitio y sus media---------*/
+/*--------------estilos que uso en todo el sitio y sus medias---------*/
+/* imagen a escala de grises */
+.gris:hover {
+  filter: grayscale(80%);
+  transition: all .5s ease-in-out; }
+
+.sombra {
+  box-shadow: 11px 10px 10px #999; }
+
+.grow {
+  transition: all .3s ease-in-out; }
+  .grow:hover {
+    transform: scale(1.3, 1.3); }
+
 .negrita {
   font-weight: bold; }
 
@@ -489,7 +501,8 @@ section ul li {
   font-size: 2.3rem; }
 
 .texto-mediano {
-  font-size: 1.7rem; }
+  font-size: 1.7rem;
+  margin-top: 0.9em; }
 
 .texto-pequeno {
   font-size: 1.2rem; }
@@ -621,7 +634,8 @@ section ul li {
   min-height: 200px;
   min-width: 250px;
   border-radius: 5%;
-  border: black 1px solid; }
+  border: black 1px solid;
+  margin: 5px 0 1em 0; }
 
 .fotoTrFlex {
   background-size: cover;
@@ -727,11 +741,6 @@ section ul li {
   flex-flow: row wrap;
   justify-content: space-evenly;
   flex-basis: 50px; }
-
-.grow {
-  transition: all .3s ease-in-out; }
-  .grow:hover {
-    transform: scale(1.5, 1.5); }
 
 .grillaTituloCole {
   grid-area: tituloCole; }

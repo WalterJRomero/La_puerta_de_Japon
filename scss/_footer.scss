@@ -76,9 +76,6 @@ $negrita:bold;
             @extend .footer-iconos__enlace;
                 color:$color;
 
-            @if $red-social == instagram{
-                font-size: 2em;
-            }
         } 
       //---si ponemos modo "alerta" se aplican el color red a los iconos      
     }@else if$color-redes-principal == alerta {
@@ -87,9 +84,6 @@ $negrita:bold;
             @extend .footer-iconos__enlace;
                 color:red;
 
-            @if $red-social == instagram{
-                font-size: 2em;
-            }
         }
         //---- si se pone modo "contraste" los colores de los iconos pasan a ser negros
     }@else if$color-redes-principal == contraste {
@@ -97,10 +91,6 @@ $negrita:bold;
         .footer-iconos__enlace--#{$red-social}{
             @extend .footer-iconos__enlace;
                 color:black;
-
-            @if $red-social == instagram{
-                font-size: 2em;
-            }
         }
     }
 }

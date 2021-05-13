@@ -50,7 +50,7 @@ $base:100px;
 }
 @each $img in buda,puerta,nieve,diciembre{
         .foto-card__imagen--#{$img} { 
-            background-image:url('../media/img/sobremi-#{$img}.jpg');
+            background-image:url('../media/img/sobremi-#{$img}.jpg');            
         }
 }
 .foto-card__descripcion {
