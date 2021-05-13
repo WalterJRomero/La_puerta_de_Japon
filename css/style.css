@@ -353,11 +353,8 @@
 .navbar-nav li ul {
   background-color: tomato; }
 
-.navbar-nav li:hover {
-  background-color: black; }
-
 .dropdown-item:hover {
-  background-color: black; }
+  background-color: tomato; }
 
 .navbar-toggler {
   background-color: white; }
@@ -584,7 +581,8 @@ section ul li {
   min-height: 200px;
   min-width: 250px;
   border-radius: 5%;
-  border: black 1px solid; }
+  border: black 1px solid;
+  margin: 5px 0 1em 0; }
 
 .fotoFsEnero1 {
   background-image: url("../media/img/festividades-enero1.jpg"); }

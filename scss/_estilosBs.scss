@@ -32,13 +32,14 @@ $valor:.475rem;
         ul {
             background-color: $color-principal;
         }
-        &:hover {
-            background-color: $color-black;
-        }        
+        // &:hover {
+        //     background-color: $color-black;
+        // }        
     }
 }
 .dropdown-item:hover {
-    background-color:black;
+    background-color:$color-principal;
+   //border-bottom: red 2px solid;
 }
 .navbar-toggler {
     background-color: white;

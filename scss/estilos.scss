@@ -201,7 +201,8 @@ section {
     min-height:200px;
     min-width: 250px;    
     border-radius: 5%;    
-    border: black 1px solid;      
+    border: black 1px solid;
+    margin: 5px 0 1em 0;      
 }
 @for $i from 1 through 4 {
     .fotoFsEnero#{$i} { 
