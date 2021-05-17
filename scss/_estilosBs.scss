@@ -31,15 +31,11 @@ $valor:.475rem;
         
         ul {
             background-color: $color-principal;
-        }
-        // &:hover {
-        //     background-color: $color-black;
-        // }        
+        }             
     }
 }
 .dropdown-item:hover {
-    background-color:$color-principal;
-   //border-bottom: red 2px solid;
+    background-color:$color-principal;   
 }
 .navbar-toggler {
     background-color: white;
@@ -85,5 +81,8 @@ $radios:(
     
    .navbar-nav {
         width:100%;
+    }
+    .dropdown-item{
+        text-align: center;
     }
 }

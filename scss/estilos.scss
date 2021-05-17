@@ -660,6 +660,9 @@ section {
     .sitemap-habilitado{
         display:contents;   
     }
+    .textoAlineado{
+        text-align: center;        
+    }
 }
 /*-----------416px a 966px--------------------------*/
 @media only screen and (min-width: 416px) and (max-width: 966px) {
@@ -750,6 +753,7 @@ section {
     .navbar-expand-lg .navbar-collapse {
         justify-content: flex-end;
     }    
+    
 }
 .sitemap {
     margin-bottom: 100px;
@@ -765,8 +769,7 @@ section {
         &:hover{
             color:$color-enlace;
         }
-
-    }
+    }    
 }
 .medidaTravolta {
     width:400px;
