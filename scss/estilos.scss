@@ -783,13 +783,32 @@ section {
 //------------------------------agregados recientemente-------------------------
 @media only screen and  (max-width: 415px){
     .fondoHeader{
-        height: 40vh;
+        height: 15vh;
     }
     
 .bloque-main__encabezado {    
     margin-top: 0vh;
 }
 
+// .bloque-main__titulo--grande {
+   
+//     margin-top: -35vh;
+// }
+
+}
+
+@media only screen and (min-width: 416px) and (max-width: 966px) {
+    .fondoHeader{
+        height:53vh;
+        background-attachment: fixed;
+    }
+    .bloque-main__encabezado {    
+        margin-top: -50vh;
+    }
+    
+    .bloque-main__descripcion {
+        margin-top: 7vh;
+}
 }
 
 @media only screen and  (min-width: 967px){
