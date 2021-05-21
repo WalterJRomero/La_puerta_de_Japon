@@ -749,12 +749,17 @@ section {
         background-image: linear-gradient(30deg, tomato,#FFF3F1);
     }
 }
-@media (min-width: 992px){
+@media only screen and  (min-width: 992px){
     .navbar-expand-lg .navbar-collapse {
         justify-content: flex-end;
-    }    
-    
+    }      
 }
+
+.medidaTravolta {
+    width:400px;
+    height:250px;
+    margin-bottom:60px;
+}  
 .sitemap {
     margin-bottom: 100px;
 }
@@ -771,8 +776,47 @@ section {
         }
     }    
 }
-.medidaTravolta {
-    width:400px;
-    height:250px;
-    margin-bottom:60px;
-}  
+
+
+
+
+//------------------------------agregados recientemente-------------------------
+@media only screen and  (max-width: 415px){
+    .fondoHeader{
+        height: 40vh;
+    }
+    
+.bloque-main__encabezado {    
+    margin-top: 0vh;
+}
+
+}
+
+@media only screen and  (min-width: 967px){
+    .fondoHeader{
+        height:53vh;
+        background-attachment: fixed;
+    }
+    .bloque-main__encabezado {    
+        margin-top: -50vh;
+    }
+}
+
+
+.fondoHeader{
+    background-image: url("../media/img/fondo_tori.jpeg");
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width:100%;   
+    border: tomato 2px solid;    
+}
+
+.imagenPagina:hover{
+border-radius:40%;
+-webkit-border-radius:50%;
+box-shadow: 0px 0px 15px 15px #ec731e;
+-webkit-box-shadow: 0px 0px 15px 15px #ec731e;
+transform: rotate(360deg);
+-webkit-transform: rotate(360deg);
+}
