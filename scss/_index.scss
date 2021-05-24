@@ -1,5 +1,5 @@
 $font-titulo:'Reggae One', cursive;
-
+//--------------------------------inicio de estilo del bloque principal----
 .bloque-main  {
     display: grid;
     margin: 2px;
@@ -18,12 +18,12 @@ $font-titulo:'Reggae One', cursive;
     align-content: space-between;
     align-items: flex-start;
     justify-content: space-evenly; }
-//-----------------------------------
+//-----------------------estilo del encabezado del index
 .bloque-main__encabezado {
     grid-area: grillaTituloIndex;
     padding: 0px 0 0px 0; 
 }
-//---------------------------------- 
+//------------------------estilos de fuente
 .bloque-main__titulo--subrayado{
     text-decoration-line: underline;
 }
@@ -33,12 +33,7 @@ $font-titulo:'Reggae One', cursive;
 .bloque-main__titulo--grande{
     font-size: 2.7rem;
 } 
-//---------------------------
-.bloque-main__descripcion{
-    font-size: 2rem;
-    width: auto;
-    height: auto;
-}
+//---------------efecto del titulo principal
 .bloque-main__titulo--transformado{
     animation-duration: 5s;
     animation-name: principal;
@@ -46,7 +41,13 @@ $font-titulo:'Reggae One', cursive;
     animation-timing-function: ease-in;
     color:rgb(214, 39, 8);
 } 
- //-----------------------------------
+//---------------------------
+.bloque-main__descripcion{
+    font-size: 2rem;
+    width: auto;
+    height: auto;
+}
+ //------------estilos de cada imagen que vincula las paginas
 .seccion-card{
     margin: 10px;
     padding: 20px;
@@ -106,6 +107,8 @@ $font-titulo:'Reggae One', cursive;
         background-image:url('../media/img/img-#{$img}.jpg');
     }
 }
+
+
 //--------------------MEDIAS----------------
 @media only screen and (max-width: 415px) {
     .seccion-card__imagen__enlace--estilo{

@@ -1,12 +1,4 @@
-$color-fondo:#FFF3F1;
 $color-principal:tomato;
-$color-black:black;
-$color-white:white;
-$color-titulo:red;
-$font-principal:'Nunito Sans', sans-serif;
-$font-titulo:'Reggae One', cursive;
-$sin-margen:margin 0px;
-$tamano-total:100%;
 $valor:.475rem;
 /*-------------clases de bootstrap modificadas------------------------------*/
 .btn {
@@ -17,22 +9,22 @@ $valor:.475rem;
     border: tomato 2px solid;
     padding-bottom:0;
     padding-top:0;
-    height: 4rem;   
-
-    div{
-        display: flex;
-        justify-content: space-between;
-        align-items: flex-end;
-    }
+    height: 4rem;  
+   
 }
-.navbar-nav {
-    
-    li {
-        
+.navbar-nav {  
+    color:white;  
+    li {        
         ul {
             background-color: $color-principal;
-        }             
-    }
+        }   
+        &:hover{          
+          border-bottom: black 2px solid;         
+        }          
+    }    
+}
+.dropdown-item{
+    text-align: center;
 }
 .dropdown-item:hover {
     background-color:$color-principal;   
@@ -47,42 +39,15 @@ $valor:.475rem;
 .btn-outline-dark:hover{
     border: red 1px solid;  
 }
-//-----------clases bs modificadas-for---la primer clase la uso! las demas son de pruebas-------------
-
+//-----------clases bs modificadas-for--------------
 @for $boton from 1 through 4{
     .btn--#{$boton} {
         margin:$valor*$boton;
     }
 }
-//----------------modifico el radio de las imagenes thumbnail usando mapas
-$radio1:3%;
-$radio2:6%;
-$radio3:9%;
-$radios:(
-    radio1:$radio1,
-    radio2:$radio2,
-    radio3:$radio3,
-);
-@each  $resultado, $radio-buscado in $radios{
-
-    .img-thumbnail--#{$resultado} {
-        border-radius: $radio-buscado;
-    }
-}
 //-----------utilizado each para modificar la clase--------------
-@each $borde in solid,dotted,dashed,double {
-    
-    .border--#{$borde}{
-       border:2px $borde blue !important;
-       background-color: transparent !important;
-    }
- }
- @media only screen and (max-width: 415px) {
-    
+@media only screen and (max-width: 415px) {    
    .navbar-nav {
         width:100%;
-    }
-    .dropdown-item{
-        text-align: center;
     }
 }

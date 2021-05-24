@@ -61,10 +61,9 @@ h1 {
         opacity:1;
     }
 }
-section {
-  
-    ul {
+section{  
 
+    ul {
         li{ 
             color:$color-black;
             font-weight: 5rem;
@@ -92,7 +91,7 @@ section {
     border-radius: 20%;
     background-color: $color-titulo;
 }
-/*--------------estilos que uso en todo el sitio y sus medias---------*/
+/*--------------estilos que uso en todo el sitio--------*/
 /* imagen a escala de grises */
 .gris:hover {
     filter: grayscale(80%);
@@ -167,15 +166,6 @@ section {
     border-radius: 10%;
 }
 /*----------------estilos de seccion festividades con flex-----------*/
-
-// .menuPrincipal {
-//     margin:10px; 
-//     padding:20px;
-//     display:flex; 
-//     flex-flow:wrap column;
-//     justify-content: space-around;
-//     flex-basis: 100px;
-// }
 .festividades {
    margin:10px; 
    padding:20px;
@@ -435,12 +425,6 @@ section {
 .asideEnero {
     grid-area:aEnero;   
     background-image: url("../media/img/festividades-aside-castle.jpg");
-
-    ul {
-        li{
-            list-style: none;
-        }
-    }
 }
 .asideAbril {
     grid-area:aAbril;    
@@ -556,6 +540,52 @@ section {
         background-image: url('../media/img/ciudades-miyajima#{$i}.jpg');
     }
 }
+.medidaTravolta {
+    width:400px;
+    height:250px;
+    margin-bottom:60px;
+}  
+.sitemap {
+    margin-bottom: 100px;
+}
+.site-map-web-padding {
+    padding-left:0px;
+    list-style-type: none;
+    letter-spacing: normal;
+    word-spacing: normal;         
+    a{
+        color:$color-black;
+
+        &:hover{
+            color:$color-enlace;
+        }
+    }    
+}
+//-------fondo de header--------
+.estiloFondoHeader{
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width:100%;   
+    border: tomato 2px solid;    
+}
+.fondoHeaderTorii{
+    background-image: url("../media/img/fondo_torii.jpeg");
+}
+.fondoHeaderFestividades{
+    background-image: url("../media/img/fondo_festividades.jpeg");
+}  
+.fondoHeaderCiudades{
+    background-image: url("../media/img/fondo_ciudades.jpeg");
+}
+.fondoHeaderTransporte{
+    background-image: url("../media/img/fondo_transporte.jpeg"); 
+    background-position-y: 36%;  
+}
+.fondoHeaderSobreMi{
+    background-image: url("../media/img/fondo_sobremi.jpg");  
+    background-position-y: 32%;  
+}
 /*-------------------------medias-------------------------*/
 /*------hasta 415px--------------------------------------*/
 @media only screen and (max-width: 415px) {
@@ -631,9 +661,6 @@ section {
         "gFooter";        
         grid-template-columns:3fr;
     }     
-    // .propAside {
-    //     display:none;
-    // }
     .grillaCiudades{ 
         grid-template-areas:
         "gCiudades"
@@ -685,6 +712,9 @@ section {
         word-spacing: 5px;
         padding: 5px;
     }
+    .textoAlineado{
+        text-align: center;        
+    }
     .fondoBanner {
         height:60px;        
         z-index:9999;
@@ -716,19 +746,24 @@ section {
         "gFooter gFooter";
         grid-template-columns:auto;
     }
-    .propAside {
-        display:none;
-    }
     .grillaCiudades{ 
-        grid-template-areas:    
-        "gCiudades gCiudades"    
-        "gTokyo gTokyo"
-        "gKyoto gKyoto"
-        "gNara gNara "       
-        "gMiyajima gMiyajima"      
-        "gFooter gFooter ";      
-        grid-template-columns:1fr 1fr;   
-    }
+        grid-template-areas:
+        "gCiudades"
+        "gTokyo "   
+        "mTokyo"  
+        "aTokyo"
+        "gKyoto" 
+        "mKyoto"
+        "aKyoto"                   
+        " gNara "        
+        "mNara"
+        "aNara"
+        "gMiyajima"      
+        "mMiyajima"
+        "aMiyajima"
+        "gFooter ";  
+        grid-template-columns:3fr;     
+    } 
     .grillaTransporte {
         grid-template-areas:
         "tituloJr tituloJr"
@@ -764,86 +799,27 @@ section {
     }      
 }
 
-.medidaTravolta {
-    width:400px;
-    height:250px;
-    margin-bottom:60px;
-}  
-.sitemap {
-    margin-bottom: 100px;
-}
-.site-map-web-padding {
-    padding-left:0px;
-    list-style-type: none;
-    letter-spacing: normal;
-    word-spacing: normal;         
-    a{
-        color:$color-black;
 
-        &:hover{
-            color:$color-enlace;
-        }
-    }    
-}
-
-//-------fondo de header--------
-.estiloFondoHeader{
-    background-size:cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    width:100%;   
-    border: tomato 2px solid;    
-}
-.fondoHeaderTorii{
-    background-image: url("../media/img/fondo_torii.jpeg");
-}
-.fondoHeaderFestividades{
-    background-image: url("../media/img/fondo_festividades.jpeg");
-}  
-.fondoHeaderCiudades{
-    background-image: url("../media/img/fondo_ciudades.jpeg");
-}
-.fondoHeaderTransporte{
-    background-image: url("../media/img/fondo_transporte.jpeg"); 
-    background-position-y: 36%;  
-}
-.fondoHeaderSobreMi{
-    background-image: url("../media/img/fondo_sobremi.jpg");  
-    background-position-y: 32%;  
-}
-
-
-.imagenPagina:hover{
-border-radius:40%;
--webkit-border-radius:50%;
-box-shadow: 0px 0px 15px 15px #ec731e;
--webkit-box-shadow: 0px 0px 15px 15px #ec731e;
-transform: rotate(360deg);
--webkit-transform: rotate(360deg);
-}
 //----------------------estilos--agregados para mejorar visita del usuario-----------------------
 @media only screen and  (max-width: 415px){
     .estiloFondoHeader{
         height: 15vh;
     }    
     .bloque-main__encabezado {    
-    margin-top: 0vh;
+        margin-top: 0vh;
     }
 }
-
 @media only screen and (min-width: 416px) and (max-width: 966px) {
     .estiloFondoHeader{
-        height:53vh;
-        background-attachment: fixed;
+        height:30vh;       
     }
     .bloque-main__encabezado {    
-        margin-top: -50vh;
+        margin-top: -31vh;
     }    
     .bloque-main__descripcion {
-        margin-top: 7vh;
+        margin-top: 26vh;
     }
 }
-
 @media only screen and  (min-width: 967px){
     .estiloFondoHeader{
         height:53vh;
@@ -863,6 +839,5 @@ transform: rotate(360deg);
     }
     .fondoHeaderCiudades{
         background-position-y: 36%;
-    }
-    
+    }    
 }    

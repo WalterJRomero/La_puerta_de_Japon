@@ -25,17 +25,17 @@
 .bloque-main__titulo--grande {
   font-size: 2.7rem; }
 
-.bloque-main__descripcion {
-  font-size: 2rem;
-  width: auto;
-  height: auto; }
-
 .bloque-main__titulo--transformado {
   animation-duration: 5s;
   animation-name: principal;
   animation-iteration-count: infinite;
   animation-timing-function: ease-in;
   color: #d62708; }
+
+.bloque-main__descripcion {
+  font-size: 2rem;
+  width: auto;
+  height: auto; }
 
 .seccion-card {
   margin: 10px;
@@ -346,13 +346,16 @@
   padding-bottom: 0;
   padding-top: 0;
   height: 4rem; }
-  .navbar div {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end; }
 
-.navbar-nav li ul {
-  background-color: tomato; }
+.navbar-nav {
+  color: white; }
+  .navbar-nav li ul {
+    background-color: tomato; }
+  .navbar-nav li:hover {
+    border-bottom: black 2px solid; }
+
+.dropdown-item {
+  text-align: center; }
 
 .dropdown-item:hover {
   background-color: tomato; }
@@ -379,36 +382,9 @@
 .btn--4 {
   margin: 1.9rem; }
 
-.img-thumbnail--radio1 {
-  border-radius: 3%; }
-
-.img-thumbnail--radio2 {
-  border-radius: 6%; }
-
-.img-thumbnail--radio3 {
-  border-radius: 9%; }
-
-.border--solid {
-  border: 2px solid blue !important;
-  background-color: transparent !important; }
-
-.border--dotted {
-  border: 2px dotted blue !important;
-  background-color: transparent !important; }
-
-.border--dashed {
-  border: 2px dashed blue !important;
-  background-color: transparent !important; }
-
-.border--double {
-  border: 2px double blue !important;
-  background-color: transparent !important; }
-
 @media only screen and (max-width: 415px) {
   .navbar-nav {
-    width: 100%; }
-  .dropdown-item {
-    text-align: center; } }
+    width: 100%; } }
 
 * {
   margin: margin 0px;
@@ -480,7 +456,7 @@ section ul li {
   border-radius: 20%;
   background-color: red; }
 
-/*--------------estilos que uso en todo el sitio y sus medias---------*/
+/*--------------estilos que uso en todo el sitio--------*/
 /* imagen a escala de grises */
 .gris:hover {
   filter: grayscale(80%);
@@ -823,8 +799,6 @@ section ul li {
 .asideEnero {
   grid-area: aEnero;
   background-image: url("../media/img/festividades-aside-castle.jpg"); }
-  .asideEnero ul li {
-    list-style: none; }
 
 .asideAbril {
   grid-area: aAbril;
@@ -943,6 +917,48 @@ section ul li {
 .fotoM3 {
   background-image: url("../media/img/ciudades-miyajima3.jpg"); }
 
+.medidaTravolta {
+  width: 400px;
+  height: 250px;
+  margin-bottom: 60px; }
+
+.sitemap {
+  margin-bottom: 100px; }
+
+.site-map-web-padding {
+  padding-left: 0px;
+  list-style-type: none;
+  letter-spacing: normal;
+  word-spacing: normal; }
+  .site-map-web-padding a {
+    color: black; }
+    .site-map-web-padding a:hover {
+      color: #0d6efd; }
+
+.estiloFondoHeader {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  border: tomato 2px solid; }
+
+.fondoHeaderTorii {
+  background-image: url("../media/img/fondo_torii.jpeg"); }
+
+.fondoHeaderFestividades {
+  background-image: url("../media/img/fondo_festividades.jpeg"); }
+
+.fondoHeaderCiudades {
+  background-image: url("../media/img/fondo_ciudades.jpeg"); }
+
+.fondoHeaderTransporte {
+  background-image: url("../media/img/fondo_transporte.jpeg");
+  background-position-y: 36%; }
+
+.fondoHeaderSobreMi {
+  background-image: url("../media/img/fondo_sobremi.jpg");
+  background-position-y: 32%; }
+
 /*-------------------------medias-------------------------*/
 /*------hasta 415px--------------------------------------*/
 @media only screen and (max-width: 415px) {
@@ -1012,6 +1028,8 @@ section ul li {
     letter-spacing: 1px;
     word-spacing: 5px;
     padding: 5px; }
+  .textoAlineado {
+    text-align: center; }
   .fondoBanner {
     height: 60px;
     z-index: 9999; }
@@ -1029,11 +1047,9 @@ section ul li {
     display: grid;
     grid-template-areas: "gFestividades gFestividades" "gEnero gEnero"      "fEnero fEnero"       "iEnero iEnero" "gAbril gAbril" "fAbril fAbril" "iAbril iAbril" "gFooter gFooter";
     grid-template-columns: auto; }
-  .propAside {
-    display: none; }
   .grillaCiudades {
-    grid-template-areas: "gCiudades gCiudades"     "gTokyo gTokyo" "gKyoto gKyoto" "gNara gNara "        "gMiyajima gMiyajima"       "gFooter gFooter ";
-    grid-template-columns: 1fr 1fr; }
+    grid-template-areas: "gCiudades" "gTokyo "    "mTokyo"   "aTokyo" "gKyoto"  "mKyoto" "aKyoto"                    " gNara "         "mNara" "aNara" "gMiyajima"       "mMiyajima" "aMiyajima" "gFooter ";
+    grid-template-columns: 3fr; }
   .grillaTransporte {
     grid-template-areas: "tituloJr tituloJr" "fotoJr fotoJr"       "textoIc textoIc" "fotoIc fotoIc" "tituloShin tituloShin" "fotoShin fotoShin" "fotoShin fotoShin"           "tituloCole tituloCole" "fotoCole fotoCole" "tituloTaxi tituloTaxi" "fotoTaxi fotoTaxi" "tituloTren tituloTren" "fotoTren fotoTren";
     justify-items: center;
@@ -1051,56 +1067,6 @@ section ul li {
   .navbar-expand-lg .navbar-collapse {
     justify-content: flex-end; } }
 
-.medidaTravolta {
-  width: 400px;
-  height: 250px;
-  margin-bottom: 60px; }
-
-.sitemap {
-  margin-bottom: 100px; }
-
-.site-map-web-padding {
-  padding-left: 0px;
-  list-style-type: none;
-  letter-spacing: normal;
-  word-spacing: normal; }
-  .site-map-web-padding a {
-    color: black; }
-    .site-map-web-padding a:hover {
-      color: #0d6efd; }
-
-.estiloFondoHeader {
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  width: 100%;
-  border: tomato 2px solid; }
-
-.fondoHeaderTorii {
-  background-image: url("../media/img/fondo_torii.jpeg"); }
-
-.fondoHeaderFestividades {
-  background-image: url("../media/img/fondo_festividades.jpeg"); }
-
-.fondoHeaderCiudades {
-  background-image: url("../media/img/fondo_ciudades.jpeg"); }
-
-.fondoHeaderTransporte {
-  background-image: url("../media/img/fondo_transporte.jpeg");
-  background-position-y: 36%; }
-
-.fondoHeaderSobreMi {
-  background-image: url("../media/img/fondo_sobremi.jpg");
-  background-position-y: 32%; }
-
-.imagenPagina:hover {
-  border-radius: 40%;
-  -webkit-border-radius: 50%;
-  box-shadow: 0px 0px 15px 15px #ec731e;
-  -webkit-box-shadow: 0px 0px 15px 15px #ec731e;
-  transform: rotate(360deg);
-  -webkit-transform: rotate(360deg); }
-
 @media only screen and (max-width: 415px) {
   .estiloFondoHeader {
     height: 15vh; }
@@ -1109,12 +1075,11 @@ section ul li {
 
 @media only screen and (min-width: 416px) and (max-width: 966px) {
   .estiloFondoHeader {
-    height: 53vh;
-    background-attachment: fixed; }
+    height: 30vh; }
   .bloque-main__encabezado {
-    margin-top: -50vh; }
+    margin-top: -31vh; }
   .bloque-main__descripcion {
-    margin-top: 7vh; } }
+    margin-top: 26vh; } }
 
 @media only screen and (min-width: 967px) {
   .estiloFondoHeader {
