@@ -34,7 +34,8 @@
   animation-duration: 5s;
   animation-name: principal;
   animation-iteration-count: infinite;
-  animation-timing-function: ease-in; }
+  animation-timing-function: ease-in;
+  color: #d62708; }
 
 .seccion-card {
   margin: 10px;
@@ -84,7 +85,7 @@
   width: 100px;
   height: 150px;
   border-radius: 30%;
-  border: red 2px solid; }
+  border: tomato 2px solid; }
 
 .seccion-card__imagen__enlace--fuji {
   background-image: url("../media/img/img-fuji.jpg"); }
@@ -335,7 +336,7 @@
 .bloque-main-contacto__formulario {
   margin: 3rem 0; }
 
-/*-------------clases de bootstrap------------------------------*/
+/*-------------clases de bootstrap modificadas------------------------------*/
 .btn {
   margin: 0.475rem; }
 
@@ -549,14 +550,6 @@ section ul li {
   border-radius: 10%; }
 
 /*----------------estilos de seccion festividades con flex-----------*/
-.menuPrincipal {
-  margin: 10px;
-  padding: 20px;
-  display: flex;
-  flex-flow: wrap column;
-  justify-content: space-around;
-  flex-basis: 100px; }
-
 .festividades {
   margin: 10px;
   padding: 20px;
@@ -992,10 +985,8 @@ section ul li {
     display: grid;
     grid-template-areas: "gFestividades"         "gEnero"                             "fEnero"       "iEnero" "gAbril" "fAbril" "iAbril" "gFooter";
     grid-template-columns: 3fr; }
-  .propAside {
-    display: none; }
   .grillaCiudades {
-    grid-template-areas: "gCiudades" "gTokyo "      "gKyoto"             " gNara "         "gMiyajima"       "gFooter ";
+    grid-template-areas: "gCiudades" "gTokyo "    "mTokyo"   "aTokyo" "gKyoto"  "mKyoto" "aKyoto"                    " gNara "         "mNara" "aNara" "gMiyajima"       "mMiyajima" "aMiyajima" "gFooter ";
     grid-template-columns: 3fr; }
   .texto-mediano {
     font-size: 1.3rem;
@@ -1078,35 +1069,29 @@ section ul li {
     .site-map-web-padding a:hover {
       color: #0d6efd; }
 
-@media only screen and (max-width: 415px) {
-  .fondoHeader {
-    height: 15vh; }
-  .bloque-main__encabezado {
-    margin-top: 0vh; } }
-
-@media only screen and (min-width: 416px) and (max-width: 966px) {
-  .fondoHeader {
-    height: 53vh;
-    background-attachment: fixed; }
-  .bloque-main__encabezado {
-    margin-top: -50vh; }
-  .bloque-main__descripcion {
-    margin-top: 7vh; } }
-
-@media only screen and (min-width: 967px) {
-  .fondoHeader {
-    height: 53vh;
-    background-attachment: fixed; }
-  .bloque-main__encabezado {
-    margin-top: -50vh; } }
-
-.fondoHeader {
-  background-image: url("../media/img/fondo_torii.jpeg");
+.estiloFondoHeader {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   width: 100%;
   border: tomato 2px solid; }
+
+.fondoHeaderTorii {
+  background-image: url("../media/img/fondo_torii.jpeg"); }
+
+.fondoHeaderFestividades {
+  background-image: url("../media/img/fondo_festividades.jpeg"); }
+
+.fondoHeaderCiudades {
+  background-image: url("../media/img/fondo_ciudades.jpeg"); }
+
+.fondoHeaderTransporte {
+  background-image: url("../media/img/fondo_transporte.jpeg");
+  background-position-y: 36%; }
+
+.fondoHeaderSobreMi {
+  background-image: url("../media/img/fondo_sobremi.jpg");
+  background-position-y: 32%; }
 
 .imagenPagina:hover {
   border-radius: 40%;
@@ -1115,3 +1100,33 @@ section ul li {
   -webkit-box-shadow: 0px 0px 15px 15px #ec731e;
   transform: rotate(360deg);
   -webkit-transform: rotate(360deg); }
+
+@media only screen and (max-width: 415px) {
+  .estiloFondoHeader {
+    height: 15vh; }
+  .bloque-main__encabezado {
+    margin-top: 0vh; } }
+
+@media only screen and (min-width: 416px) and (max-width: 966px) {
+  .estiloFondoHeader {
+    height: 53vh;
+    background-attachment: fixed; }
+  .bloque-main__encabezado {
+    margin-top: -50vh; }
+  .bloque-main__descripcion {
+    margin-top: 7vh; } }
+
+@media only screen and (min-width: 967px) {
+  .estiloFondoHeader {
+    height: 53vh;
+    background-attachment: fixed; }
+  .bloque-main__encabezado {
+    margin-top: -50vh; }
+  .fondoHeaderCiudades {
+    background-position-y: 20%; }
+  .fondoHeaderTransporte {
+    background-position-y: 63%; }
+  .fondoHeaderSobreMi {
+    background-position-y: 36%; }
+  .fondoHeaderCiudades {
+    background-position-y: 36%; } }

@@ -44,6 +44,7 @@ $font-titulo:'Reggae One', cursive;
     animation-name: principal;
     animation-iteration-count: infinite;
     animation-timing-function: ease-in;
+    color:rgb(214, 39, 8);
 } 
  //-----------------------------------
 .seccion-card{
@@ -98,7 +99,7 @@ $font-titulo:'Reggae One', cursive;
     width: 100px;
     height: 150px;
     border-radius: 30%;
-    border: red 2px solid;
+    border:tomato 2px solid;
 }
 @each $img in fuji,tren,nekko,foxx {
     .seccion-card__imagen__enlace--#{$img} { 
