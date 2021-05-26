@@ -63,30 +63,3 @@ $base:100px;
 .galeria-fotos-grande{
         padding-bottom:4rem;
 }
-/*-----------416px a 966px--------------------------*/
-@media only screen and (min-width: 416px) and (max-width: 966px) {
-
-    .encabezado-principal__titulo--grande{
-        font-size: 2rem;
-        color: red;
-    }
-    .foto-card__imagen{
-        margin-top: 15px;
-        margin-bottom: 15px;
-    }
-}
-/*------------------967px--------------*/
-@media only screen and (min-width: 900px) {
-
-    .foto-card__imagen--medida-principal {
-        transition: height 2s, width 2s; }
-
-    .foto-card__imagen--medida-principal:hover {
-        height: 350px;
-        width: 300px; }
-       
-    .foto-card__imagen--grande:hover {
-        height: 450px;
-        width: 650px; } 
-}
-

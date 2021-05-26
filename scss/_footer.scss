@@ -27,11 +27,13 @@ $negrita:bold;
     letter-spacing:$espacio-letras;    
     word-spacing: $espacio-palabras;
     line-height: 1.6;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-evenly;  
+    display: flex;    
     grid-area:gFooter;    
-    padding-bottom:10px    
+    padding-bottom:10px;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;    
+    justify-items: center;    
 }
 //--------------paginas sugeridas----------------------
 .footer-sugeridas{
@@ -39,15 +41,12 @@ $negrita:bold;
     flex-flow: column nowrap;
     align-items: center;
 }
-@if $color-redes-principal == contraste{
-    
+@if $color-redes-principal == contraste{    
     .footer-sugeridas__boton{
         background-color: $color-fuente-default;
         color:$color-fondo;
     } 
-
-} @else if $color-redes-principal == alerta{
-  
+} @else if $color-redes-principal == alerta{  
     .footer-sugeridas__boton {
         background-color:$color-fuente-alerta;
         color:$color-fondo
@@ -57,6 +56,7 @@ $negrita:bold;
 .footer-iconos__redes{
     display: flex; 
     align-items: center;
+    flex-flow:row;
 }
 .footer-iconos__enlace{     
     margin:0px 2px;
@@ -70,33 +70,29 @@ $negrita:bold;
   //-- para cada opcion en el mapa se repite el ciclo
 @each $red-social,$color in $color-iconos{
     //--, si esta por "default" aplica colores default ya asignados red,blue, purple
-    @if $color-redes-principal == default{
-         
+    @if $color-redes-principal == default{         
         .footer-iconos__enlace--#{$red-social}{
             @extend .footer-iconos__enlace;
                 color:$color;
-
-        } 
+            } 
       //---si ponemos modo "alerta" se aplican el color red a los iconos      
     }@else if$color-redes-principal == alerta {
-
         .footer-iconos__enlace--#{$red-social}{
             @extend .footer-iconos__enlace;
                 color:red;
-
-        }
+            }
         //---- si se pone modo "contraste" los colores de los iconos pasan a ser negros
     }@else if$color-redes-principal == contraste {
-
         .footer-iconos__enlace--#{$red-social}{
             @extend .footer-iconos__enlace;
                 color:black;
-        }
+            }
     }
 }
 //---pequeño--mapa del sitio con condicional if para colores de enlaces-----------
 .footer-mapa{
     display: flex;  
+    justify-content: space-evenly;
 }
 .footer-mapa__lista{     
     text-align:center;    
@@ -111,50 +107,32 @@ $negrita:bold;
     font-weight:$negrita;
     text-decoration: none;
 
-    @if $color-fuente-lista == lista-default{
-        
-        color:$color-fuente-default;
-    
+    @if $color-fuente-lista == lista-default{        
+        color:$color-fuente-default;    
     }@else if$color-fuente-lista== lista-alterna{
-
-        color:$color-fuente-alterna;
-    
+        color:$color-fuente-alterna;    
     }@else if$color-fuente-lista== lista-alerta{
-
         color:$color-fuente-alerta;
     }
+}  
+//-------estilo de mapa del sitio-----
+.sitemap {
+    margin-bottom: 30px;  
+    display:none;    
 }
-//-----------------------medias-----------------------------------
-@media only screen and (max-width: 415px) {
-    .footer {        
-        flex-flow: column;
-        justify-content: center;
-        align-items: center;    
-        justify-items: center;    
+.sitemap-habilitado{
+    display:contents;   
+}
+.site-map-web-padding {
+    padding-left:0px;
+    list-style-type: none;
+    letter-spacing: normal;
+    word-spacing: normal;         
+    a{
+        color:$color-black;
+
+        &:hover{
+            color:$color-enlace;
+        }
     }    
-    .footer-iconos__redes{
-        display: flex;
-        flex-flow:row;
-        align-items: center;
-    }
 }
-@media only screen and (min-width: 416px) and (max-width: 966px) {
-    .footer {
-        flex-flow:column;
-        justify-content: center;
-        align-items: center;
-    }     
-    .footer-iconos__redes{        
-        flex-flow:row;        
-    }
-}
-@media only screen and (min-width: 967px) {
-    .footer {
-        background-image:linear-gradient(#FFF3F1,tomato );
-        width: $tamano-total;     
-        flex-flow: row wrap;      
-    }
-    .footer-iconos__redes{        
-        flex-flow:column;        
-    }
-} 
