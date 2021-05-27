@@ -4,6 +4,7 @@ $color-principal:tomato;
 $espacio-letras:2px;
 $espacio-palabras:2px;
 $color-titulo:red;
+$color-black:black;
 $tamano-total:100%;
 $color-redes-principal:default; //valores posibles default , alerta, contraste 
 $color-facebook:blue !default;
@@ -61,11 +62,11 @@ $negrita:bold;
 .footer-iconos__enlace{     
     margin:0px 2px;
     font-size: 1.4em;
-    color: black;
+    color: $color-black;
     text-decoration: none;
 }
 .footer-iconos__enlace:hover{
-    color:black;    
+    color:$color-black;    
 }
   //-- para cada opcion en el mapa se repite el ciclo
 @each $red-social,$color in $color-iconos{
@@ -79,13 +80,13 @@ $negrita:bold;
     }@else if$color-redes-principal == alerta {
         .footer-iconos__enlace--#{$red-social}{
             @extend .footer-iconos__enlace;
-                color:red;
+                color:$color-titulo;
             }
         //---- si se pone modo "contraste" los colores de los iconos pasan a ser negros
     }@else if$color-redes-principal == contraste {
         .footer-iconos__enlace--#{$red-social}{
             @extend .footer-iconos__enlace;
-                color:black;
+                color:$color-black;
             }
     }
 }

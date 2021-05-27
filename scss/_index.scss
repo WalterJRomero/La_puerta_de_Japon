@@ -1,4 +1,6 @@
 $font-titulo:'Reggae One', cursive;
+$color-principal:tomato;
+$color-transformado:rgb(214, 39, 8);
 //--------------------------------inicio de estilo del bloque principal----
 .bloque-main  {
     display: flex;
@@ -35,7 +37,7 @@ $font-titulo:'Reggae One', cursive;
     animation-name: principal;
     animation-iteration-count: infinite;
     animation-timing-function: ease-in;
-    color:rgb(214, 39, 8);
+    color:$color-transformado;
 } 
 //---------------------------
 .bloque-main__descripcion{
@@ -52,17 +54,10 @@ $font-titulo:'Reggae One', cursive;
     justify-content: space-around;
     flex-basis: 100px;
 }
-.seccion-card--festividades{
-    grid-area: grillaFox;
-}
-.seccion-card--ciudades{
-    grid-area: grillaFuji;
-}
-.seccion-card--transporte{
-    grid-area: grillaTren;
-}
-.seccion-card--sobreMi{
-    grid-area: grillaGato;
+@each $grilla in grillaFox,grillaFuji,grillaTren,grillaGato {
+    .seccion-card--#{$grilla}{
+        grid-area:#{$grilla};
+    }
 }
 //--------------------------------------
 .seccion-card__enlace--tamano{    
@@ -73,7 +68,7 @@ $font-titulo:'Reggae One', cursive;
 }
 .seccion-card__enlace--bold{
     font-weight: bold;  
-    color:tomato;
+    color:$color-principal;
 }
 //--------------------------------------
 .seccion-card__imagen{
@@ -96,7 +91,7 @@ $font-titulo:'Reggae One', cursive;
     width: 180px;
     height: 200px;
     border-radius: 30%;
-    border:tomato 2px solid;
+    border:$color-principal 2px solid;
 }
 @each $img in fuji,tren,nekko,foxx {
     .seccion-card__imagen__enlace--#{$img} { 

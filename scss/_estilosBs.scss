@@ -1,21 +1,24 @@
 $color-principal:tomato;
 $valor:.475rem;
+$color-white:white;
+$color-titulo:red;
+$color-secundario:#dd9f94;
 /*-------------clases de bootstrap modificadas------------------------------*/
 .btn {
     margin:$valor;
 }
 .navbar {
     height: max-content;
-    border: tomato 2px solid;
+    border: $color-principal 2px solid;
     padding-bottom:0;
     padding-top:0;
     height: 4rem;    
 }
 .navbar-nav {  
-    color:white;  
+    color:$color-white;  
     li {        
         ul {           
-            background-image: linear-gradient(30deg, tomato,#dd9f94);
+            background-image: linear-gradient(30deg, $color-principal,$color-secundario);
         }     
     }    
 }
@@ -26,14 +29,14 @@ $valor:.475rem;
     background-color:$color-principal;   
 }
 .navbar-toggler {
-    background-color: white;
+    background-color: $color-white;
 }
 .row {
     margin:3px;
     margin-bottom:5px;
 }
 .btn-outline-dark:hover{
-    border: red 1px solid;  
+    border: $color-titulo 1px solid;  
 }
 //-----------clases bs modificadas-for--------------
 @for $boton from 1 through 4{

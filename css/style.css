@@ -45,16 +45,16 @@
   justify-content: space-around;
   flex-basis: 100px; }
 
-.seccion-card--festividades {
+.seccion-card--grillaFox {
   grid-area: grillaFox; }
 
-.seccion-card--ciudades {
+.seccion-card--grillaFuji {
   grid-area: grillaFuji; }
 
-.seccion-card--transporte {
+.seccion-card--grillaTren {
   grid-area: grillaTren; }
 
-.seccion-card--sobreMi {
+.seccion-card--grillaGato {
   grid-area: grillaGato; }
 
 .seccion-card__enlace--tamano {
@@ -135,15 +135,6 @@
 .foto-card__imagen--medida-principal {
   height: 200px;
   width: 250px; }
-
-.foto-card__imagen--medidas {
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  min-height: 200px;
-  min-width: 250px;
-  border-radius: 5%;
-  border: black 1px solid; }
 
 .foto-card__imagen--buda {
   background-image: url("../media/img/sobremi-buda.jpg"); }
@@ -487,7 +478,7 @@ section ul li {
   align-content: center;
   align-items: center;
   justify-content: stretch;
-  padding-right: 0px;
+  padding: 0.5rem;
   margin-bottom: 60px;
   grid-template-areas: "gFestividades"         "gEnero"                             "fEnero"       "iEnero" "gAbril" "fAbril" "iAbril" "gFooter";
   grid-template-columns: 3fr; }
@@ -505,6 +496,10 @@ section ul li {
 .infoEnero {
   grid-area: iEnero; }
 
+.asideEnero {
+  grid-area: aEnero;
+  background-image: url("../media/img/festividades-aside-castle.jpg"); }
+
 .grillaAbril {
   grid-area: gAbril; }
 
@@ -514,22 +509,17 @@ section ul li {
 .infoAbril {
   grid-area: iAbril; }
 
+.asideAbril {
+  grid-area: aAbril;
+  background-image: url("../media/img/festividades-aside-sakura.jpg"); }
+
 .propAside {
   background-size: cover;
   background-position: center;
   list-style: none;
   border-radius: 1%;
   width: 96%;
-  height: 95%;
-  border: black 1px solid; }
-
-.asideEnero {
-  grid-area: aEnero;
-  background-image: url("../media/img/festividades-aside-castle.jpg"); }
-
-.asideAbril {
-  grid-area: aAbril;
-  background-image: url("../media/img/festividades-aside-sakura.jpg"); }
+  height: 95%; }
 
 /* ----------------- estilos de transporte----------------------*/
 .fotoTr {
@@ -592,51 +582,51 @@ section ul li {
   grid-row-gap: 50px;
   grid-column-gap: 5px;
   padding: 1rem;
-  grid-template-areas: "tituloJr" "fotoJr"       "textoIc" "fotoIc" "tituloShin" "fotoShin" "fotoShin" "fotoShin" "fotoShin"   "tituloCole" "fotoCole" "tituloTaxi" "fotoTaxi" "tituloTren" "fotoTren";
+  grid-template-areas: "tituloJr" "fotoJr"       "tituloIc" "fotoIc" "tituloShin" "fotoShin" "fotoShin" "fotoShin" "fotoShin"   "tituloCole" "fotoCole" "tituloTaxi" "fotoTaxi" "tituloTren" "fotoTren";
   justify-items: center;
   align-content: center;
   align-items: center;
   justify-content: center;
   grid-template-columns: 1fr; }
 
-.grillaTituloJr {
+.grilla-tituloJr {
   grid-area: tituloJr; }
 
-.grillaFotosJr {
-  grid-area: fotoJr; }
+.grilla-tituloIc {
+  grid-area: tituloIc; }
 
-.grillaTituloIc {
-  grid-area: textoIc; }
-
-.grillaFotosIc {
-  grid-area: fotoIc; }
-
-.grillaTituloShin {
+.grilla-tituloShin {
   grid-area: tituloShin; }
 
-.grillaFotosShin {
+.grilla-tituloCole {
+  grid-area: tituloCole; }
+
+.grilla-tituloTaxi {
+  grid-area: tituloTaxi; }
+
+.grilla-tituloTren {
+  grid-area: tituloTren; }
+
+.grilla-fotoJr {
+  grid-area: fotoJr; }
+
+.grilla-fotoIc {
+  grid-area: fotoIc; }
+
+.grilla-fotoShin {
   grid-area: fotoShin;
   display: flex;
   flex-flow: row wrap;
   justify-content: space-evenly;
   flex-basis: 50px; }
 
-.grillaTituloCole {
-  grid-area: tituloCole; }
-
-.grillaFotosCole {
+.grilla-fotoCole {
   grid-area: fotoCole; }
 
-.grillaTituloTaxi {
-  grid-area: tituloTaxi; }
-
-.grillaFotosTaxi {
+.grilla-fotoTaxi {
   grid-area: fotoTaxi; }
 
-.grillaTituloTren {
-  grid-area: tituloTren; }
-
-.grillaFotosTren {
+.grilla-fotoTren {
   grid-area: fotoTren; }
 
 /*------------- definiciones de seccion ciudades turisticas-----------*/
@@ -652,15 +642,6 @@ section ul li {
 .mapaTokyo {
   grid-area: mTokyo; }
 
-.mapaKyoto {
-  grid-area: mKyoto; }
-
-.mapaNara {
-  grid-area: mNara; }
-
-.mapaMiyajima {
-  grid-area: mMiyajima; }
-
 .asideTokyo {
   grid-area: aTokyo; }
 
@@ -669,6 +650,9 @@ section ul li {
 
 .grillaTokyo {
   grid-area: gTokyo; }
+
+.mapaKyoto {
+  grid-area: mKyoto; }
 
 .asideKyoto {
   grid-area: aKyoto; }
@@ -679,6 +663,9 @@ section ul li {
 .grillaKyoto {
   grid-area: gKyoto; }
 
+.mapaNara {
+  grid-area: mNara; }
+
 .asideNara {
   grid-area: aNara; }
 
@@ -687,6 +674,9 @@ section ul li {
 
 .grillaNara {
   grid-area: gNara; }
+
+.mapaMiyajima {
+  grid-area: mMiyajima; }
 
 .asideMiyajima {
   grid-area: aMiyajima; }
@@ -887,7 +877,7 @@ section ul li {
 /*---------------MEDIAS generales, FESTIVIDADES, TRANSPORTE, CIUDADES-----------------*/
 @media only screen and (min-width: 416px) and (max-width: 966px) {
   p {
-    text-align: center; }
+    text-align: justify; }
   h1 {
     font-weight: 25px;
     letter-spacing: 1px;
@@ -914,7 +904,7 @@ section ul li {
     grid-template-areas: "gCiudades" "gTokyo "    "mTokyo"   "aTokyo" "gKyoto"  "mKyoto" "aKyoto"                    " gNara "         "mNara" "aNara" "gMiyajima"       "mMiyajima" "aMiyajima" "gFooter ";
     grid-template-columns: 3fr; }
   .grillaTransporte {
-    grid-template-areas: "tituloJr tituloJr" "fotoJr fotoJr"       "textoIc textoIc" "fotoIc fotoIc" "tituloShin tituloShin" "fotoShin fotoShin" "fotoShin fotoShin"           "tituloCole tituloCole" "fotoCole fotoCole" "tituloTaxi tituloTaxi" "fotoTaxi fotoTaxi" "tituloTren tituloTren" "fotoTren fotoTren";
+    grid-template-areas: "tituloJr tituloJr" "fotoJr fotoJr"       "tituloIc tituloIc" "fotoIc fotoIc" "tituloShin tituloShin" "fotoShin fotoShin" "fotoShin fotoShin"           "tituloCole tituloCole" "fotoCole fotoCole" "tituloTaxi tituloTaxi" "fotoTaxi fotoTaxi" "tituloTren tituloTren" "fotoTren fotoTren";
     justify-items: center;
     align-content: center;
     align-items: center;
@@ -935,7 +925,7 @@ section ul li {
     border: tomato 4px solid;
     height: 5rem; }
   .grillaTransporte {
-    grid-template-areas: "tituloJr tituloJr fotoJr" "textoIc textoIc   fotoIc"     "tituloShin tituloShin tituloShin"    "fotoShin fotoShin   fotoShin"    "tituloCole tituloCole fotoCole"  "tituloTaxi tituloTaxi fotoTaxi"        "tituloTren tituloTren fotoTren";
+    grid-template-areas: "tituloJr tituloJr fotoJr" "tituloIc tituloIc   fotoIc"     "tituloShin tituloShin tituloShin"    "fotoShin fotoShin   fotoShin"    "tituloCole tituloCole fotoCole"  "tituloTaxi tituloTaxi fotoTaxi"        "tituloTren tituloTren fotoTren";
     grid-template-columns: 4fr 1fr;
     justify-items: stretch;
     align-content: space-between;
@@ -949,6 +939,8 @@ section ul li {
   .grillaFestividades {
     grid-template-areas: "gFestividades gFestividades gFestividades gFestividades" "gEnero gEnero gEnero aEnero" "fEnero fEnero fEnero aEnero"     "iEnero iEnero iEnero aEnero" "gAbril gAbril gAbril aAbril"  "fAbril fAbril fAbril aAbril" "iAbril iAbril iAbril aAbril" "gFooter gFooter gFooter gFooter";
     grid-template-columns: 3fr 3fr 3fr 1.6fr; }
+  .propAside {
+    border: black 1px solid; }
   .grillaCiudades {
     grid-template-areas: "gCiudades gCiudades gCiudades gCiudades"     "gTokyo gTokyo gTokyo mTokyo"    "gTokyo gTokyo gTokyo aTokyo"        "mKyoto gKyoto gKyoto gKyoto" "aKyoto gKyoto gKyoto gKyoto" "gNara gNara gNara mNara" "gNara gNara gNara aNara"         "mMiyajima gMiyajima gMiyajima gMiyajima" "aMiyajima gMiyajima gMiyajima gMiyajima" "gFooter gFooter gFooter gFooter";
     grid-template-columns: 2fr 2fr 2fr 2fr; }

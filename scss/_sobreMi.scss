@@ -2,11 +2,13 @@ $alineado:center;
 $doble:200px;
 $mitad:50px;
 $base:100px;
+$color-black:black;
+$color-titulo:red;
 /*---------------imagenes de cada logo de pagina -----*/
 .encabezado-principal__titulo{
         font-weight: bold;
         text-align: $alineado;
-        color: red;
+        color: $color-titulo;
 }
 .encabezado-principal__titulo--grande{
         font-size: 2.3rem;               
@@ -33,20 +35,11 @@ $base:100px;
         min-height:$doble;
         min-width: 250px;
         border-radius: 5%;
-        border: black 1px solid;
+        border: $color-black 1px solid;
 }
 .foto-card__imagen--medida-principal{
         height:$doble;
         width: 250px;
-}
-.foto-card__imagen--medidas{
-        background-size: cover; 
-        background-position:$alineado;
-        background-repeat: no-repeat;
-        min-height:$doble;
-        min-width: 250px;
-        border-radius: 5%;
-        border: black 1px solid;         
 }
 @each $img in buda,puerta,nieve,diciembre{
         .foto-card__imagen--#{$img} { 
@@ -58,7 +51,7 @@ $base:100px;
         margin:5px 0px;
 }
 .foto-card__descripcion__texto{
-        color: black
+        color: $color-black;
 }
 .galeria-fotos-grande{
         padding-bottom:4rem;

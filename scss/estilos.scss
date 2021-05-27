@@ -4,6 +4,7 @@ $color-black:black;
 $color-white:white;
 $color-titulo:red;
 $color-enlace:#0d6efd;
+$color-sombra:#999;
 $font-principal:'Nunito Sans', sans-serif;
 $font-titulo:'Reggae One', cursive;
 $sin-margen:margin 0px;
@@ -14,7 +15,7 @@ $tamano-total:100%;
 @import "footer";
 @import "contacto";
 @import "estilosBs";
-
+//------reseteo inicial------------
 * {
     margin:$sin-margen;
     padding:$sin-margen;   
@@ -68,13 +69,13 @@ section{
     background-color: transparent;
 }
 .colorMenu{         
-    background-image: linear-gradient(30deg, tomato,#FFF3F1);
+    background-image: linear-gradient(30deg, $color-principal,$color-fondo);
     background-color:$color-principal;
     color:$color-white;
     font-weight:bold;
     }
 .bordeRojo {
-    border-bottom:red 2px solid;
+    border-bottom:$color-titulo 2px solid;
 }
 .medidaTravolta {
     width:400px;
@@ -87,7 +88,7 @@ section{
     transition:all .5s ease-in-out;
     }
 .sombra {
-    box-shadow: 11px 10px 10px #999;
+    box-shadow: 11px 10px 10px $color-sombra;
 }
 
 //-----estilos sobre fuentes------
@@ -177,7 +178,7 @@ section{
     min-height:200px;
     min-width: 250px;    
     border-radius: 5%;    
-    border: black 1px solid;
+    border: $color-black 1px solid;
     margin: 5px 0 1em 0;      
 }
 @for $i from 1 through 4 {
@@ -200,7 +201,7 @@ section{
     align-content: center;  
     align-items:center; 
     justify-content: stretch; 
-    padding-right:0px ;  
+    padding: 0.5rem; 
     margin-bottom:60px;   
     grid-template-areas:
     "gFestividades"        
@@ -217,23 +218,25 @@ section{
     grid-area: gFestividades;  
     padding:0.5rem;
 } 
-.grillaEnero {
-    grid-area:gEnero;   
-} 
-.fotosGrillaEnero {
-    grid-area:fEnero;   
-}
-.infoEnero {
-    grid-area:iEnero;  
-}
-.grillaAbril {
-    grid-area:gAbril;   
-}
-.fotosGrillaAbril {
-    grid-area:fAbril;   
-}
-.infoAbril {
-    grid-area:iAbril;   
+@each $mes in Enero,Abril {
+    .grilla#{$mes}{
+        grid-area:g#{$mes};
+    }
+    .fotosGrilla#{$mes}{
+        grid-area:f#{$mes};
+    }
+    .info#{$mes}{
+        grid-area:i#{$mes};
+    }
+    .aside#{$mes}{
+        grid-area:a#{$mes};
+        @if $mes == Enero{
+            background-image: url("../media/img/festividades-aside-castle.jpg");
+        }
+        @if $mes == Abril{
+            background-image: url("../media/img/festividades-aside-sakura.jpg");   
+        }
+    }
 }
 .propAside {
     background-size: cover;
@@ -241,16 +244,7 @@ section{
     list-style: none;
     border-radius: 1%;
     width: 96%;
-    height: 95%;
-    border: black 1px solid;    
-}
-.asideEnero {
-    grid-area:aEnero;   
-    background-image: url("../media/img/festividades-aside-castle.jpg");
-}
-.asideAbril {
-    grid-area:aAbril;    
-    background-image: url("../media/img/festividades-aside-sakura.jpg");    
+    height: 95%;   
 }
 /* ----------------- estilos de transporte----------------------*/
 .fotoTr {
@@ -260,7 +254,7 @@ section{
     min-height:200px;
     min-width: 250px;    
     border-radius: 5%;   
-    border: black 1px solid;
+    border: $color-black 1px solid;
     margin: 5px 0 1em 0;  
 } 
 @each $img in jrpassestandar,jrgreen,icicoca,icsuica {
@@ -299,7 +293,7 @@ section{
     grid-template-areas:
     "tituloJr"
     "fotoJr"      
-    "textoIc"
+    "tituloIc"
     "fotoIc"
     "tituloShin"
     "fotoShin"
@@ -318,45 +312,21 @@ section{
     justify-content:center;
     grid-template-columns: 1fr;
 }
-.grillaTituloJr{
-    grid-area:tituloJr;
+@each $titulo in tituloJr,tituloIc,tituloShin,tituloCole,tituloTaxi,tituloTren {
+    .grilla-#{$titulo} { 
+        grid-area:#{$titulo};
+    }
 }
-.grillaFotosJr {
-    grid-area:fotoJr;
-}
-.grillaTituloIc{
-    grid-area:textoIc;
-}
-.grillaFotosIc{
-    grid-area:fotoIc;
-}
-.grillaTituloShin {
-    grid-area:tituloShin;
-}
-.grillaFotosShin{
-    grid-area:fotoShin;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-evenly;
-    flex-basis: 50px;    
-}
-.grillaTituloCole{
-    grid-area:tituloCole;
-}
-.grillaFotosCole {
-    grid-area:fotoCole    
-}
-.grillaTituloTaxi{
-    grid-area:tituloTaxi;
-}
-.grillaFotosTaxi {
-    grid-area:fotoTaxi;
-}
-.grillaTituloTren{
-    grid-area:tituloTren;
-}
-.grillaFotosTren {
-    grid-area:fotoTren;
+@each $foto in fotoJr,fotoIc,fotoShin,fotoCole,fotoTaxi,fotoTren {
+    .grilla-#{$foto} { 
+        grid-area:#{$foto};
+        @if $foto == fotoShin{
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-evenly;
+            flex-basis: 50px; 
+        }
+    }
 }
 /*------------- definiciones de seccion ciudades turisticas-----------*/
 .asideCiudad {
@@ -368,58 +338,24 @@ section{
     max-width:350px;
     max-height:200px; 
 }
-.mapaTokyo {
-    grid-area:mTokyo;
-}
-.mapaKyoto {
-    grid-area:mKyoto;
-}
-.mapaNara {
-    grid-area:mNara;
-}
-.mapaMiyajima {
-    grid-area:mMiyajima;
-}
-.asideTokyo {
-    grid-area:aTokyo;        
-}
-.fotosGrillaTokyo {
-    grid-area:fTokyo;
-}
-.grillaTokyo {
-    grid-area:gTokyo;
-}
-.asideKyoto {
-    grid-area:aKyoto;        
-}
-.fotosGrillaKyoto {
-    grid-area:fKyoto;
-}
-.grillaKyoto {
-    grid-area:gKyoto;
-}
-.asideNara {
-    grid-area:aNara;        
-}
-.fotosGrillaNara {
-    grid-area:fNara;
-}
-.grillaNara {
-    grid-area:gNara;
-}
-.asideMiyajima {
-    grid-area:aMiyajima;        
-}
-.fotosGrillaMiyajima {
-    grid-area:fMiyajima;
-}
-.grillaMiyajima {
-    grid-area:gMiyajima;
+@each $ciudad in Tokyo,Kyoto,Nara,Miyajima{
+    .mapa#{$ciudad}{
+        grid-area:m#{$ciudad};
+    }
+    .aside#{$ciudad}{
+        grid-area:a#{$ciudad};
+    }
+    .fotosGrilla#{$ciudad}{
+        grid-area:f#{$ciudad};
+    }
+    .grilla#{$ciudad}{
+        grid-area:g#{$ciudad};
+    }
 }
 .grillaCiudades {
 
     h3{
-       border-bottom: red 2px solid;
+       border-bottom: $color-titulo 2px solid;
     }
 }
 .grillaTituloCiudades {
@@ -477,7 +413,7 @@ section{
     background-repeat: no-repeat;
     background-position: center;
     width:100%;   
-    border: tomato 2px solid;   
+    border: $color-principal 2px solid;   
     height: 15vh; 
 }
 @each $img in torii,festividades,ciudades,transporte,sobremi {

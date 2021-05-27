@@ -1,12 +1,14 @@
 $tamano-total:100%;
 $color-principal:tomato;
 $color-white:white;
+$color-black:black;
+$color-titulo:red;
 //------------- MEDIAS NAVBAR CLASE DE BOOTSTRAP------------------------------
 @media only screen and (min-width: 992px) {
     .navbar-nav {          
         li {        
             &:hover{          
-              border-bottom: black 2px solid;
+              border-bottom: $color-black 2px solid;
             }          
         }    
     }
@@ -43,7 +45,7 @@ $color-white:white;
 @media only screen and (min-width: 416px) and (max-width: 966px) {
     .encabezado-principal__titulo--grande{
         font-size: 2rem;
-        color: red;
+        color: $color-titulo;
     }
     .foto-card__imagen{
         margin-top: 15px;
@@ -164,7 +166,7 @@ $color-white:white;
 /*---------------MEDIAS generales, FESTIVIDADES, TRANSPORTE, CIUDADES-----------------*/
 @media only screen and (min-width: 416px) and (max-width: 966px) {
     p{
-        text-align:center;                   
+        text-align:justify;                   
     }    
     h1 {
         font-weight: 25px;
@@ -225,7 +227,7 @@ $color-white:white;
         grid-template-areas:
         "tituloJr tituloJr"
         "fotoJr fotoJr"      
-        "textoIc textoIc"
+        "tituloIc tituloIc"
         "fotoIc fotoIc"
         "tituloShin tituloShin"
         "fotoShin fotoShin"
@@ -266,7 +268,7 @@ $color-white:white;
     .grillaTransporte {        
         grid-template-areas:     
         "tituloJr tituloJr fotoJr"
-        "textoIc textoIc   fotoIc"    
+        "tituloIc tituloIc   fotoIc"    
         "tituloShin tituloShin tituloShin"   
         "fotoShin fotoShin   fotoShin"   
         "tituloCole tituloCole fotoCole" 
@@ -297,6 +299,9 @@ $color-white:white;
         "gFooter gFooter gFooter gFooter";
         grid-template-columns:3fr 3fr 3fr 1.6fr;        
     }     
+    .propAside {        
+        border: $color-black 1px solid;    
+    }
     .grillaCiudades{ 
         grid-template-areas:           
         "gCiudades gCiudades gCiudades gCiudades"    
