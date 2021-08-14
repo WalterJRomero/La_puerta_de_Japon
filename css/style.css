@@ -810,7 +810,7 @@ section ul li {
 
 .fondoHeader-avion {
   background-image: url("../media/img/fondo_avion.jpeg");
-  background-position-y: 70%; }
+  background-position-y: 47%; }
 
 @media only screen and (min-width: 992px) {
   .navbar-nav li:hover {
@@ -967,6 +967,8 @@ section ul li {
     background-position-y: 63%; }
   .fondoHeader-sobremi {
     background-position-y: 36%; }
+  .fondoHeader-avion {
+    background-position-y: 70%; }
   .fondoBanner {
     border: tomato 4px solid;
     height: 5rem; }
