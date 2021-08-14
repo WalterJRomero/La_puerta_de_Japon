@@ -55,6 +55,15 @@ section{
         }
     }
 } 
+.tabla{
+    border:2px solid black;
+    
+}
+.padding{
+    padding-left: 0.5rem;
+    padding-right: 1rem;
+}
+
 @keyframes principal {
     0% {
         opacity: 0.1;
@@ -131,6 +140,37 @@ section{
     &:hover{
         transform: none;
     }
+}
+    /* Estilos del botón de scroll */
+.boton-scroll {
+    position: fixed;
+    bottom:2vh;
+    right: 1vw;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 40%;
+    font-size: 2rem;
+    font-weight: bold;
+    background-color: black;
+    color: tomato;
+    /* outline: 0;
+    border: 0; */
+    cursor: none;
+    transition: all 0.5s ease-out;
+}
+
+.boton-scroll:hover {
+    background-color: tomato;
+    color: black;
+}
+#botonGuardar:hover{
+    background-color: tomato;
+    color: black;
+}
+
+.hidden {
+    opacity: 0;
+    visibility: hidden;
 }
 /*-----------------banner ---------------*/
 .fondoBanner {    
@@ -416,7 +456,7 @@ section{
     border: $color-principal 2px solid;   
     height: 15vh; 
 }
-@each $img in torii,festividades,ciudades,transporte,sobremi {
+@each $img in torii,festividades,ciudades,transporte,sobremi,avion {
 
         .fondoHeader-#{$img} {
             background-image:url('../media/img/fondo_#{$img}.jpeg');
@@ -425,7 +465,10 @@ section{
                 background-position-y:32%;}
 
             @if $img == transporte {        
-            background-position-y:37%;}       
+            background-position-y:37%;}   
+                
+            @if $img == avion {        
+                background-position-y:70%;}   
         }
 }
 //------------- importo medias para que no las pise mi clase redefinida------------------

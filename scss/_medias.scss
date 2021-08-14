@@ -105,7 +105,8 @@ $color-titulo:red;
         "grillaFuji" 
         "grillaTren" 
         "grillaGato"
-        "footer";
+        "grillaSimulador"
+        "footer";        
         grid-template-columns: 3fr;
         margin: 0px;
         padding: 0px;
@@ -158,6 +159,7 @@ $color-titulo:red;
         ". grillaFuji . " 
         ". grillaTren ." 
         ". grillaGato ."
+        ". grillaSimulador ."
         "footer footer footer";
         grid-template-columns: 2fr 2fr 2fr;
         grid-column-gap: 0px;        

@@ -54,7 +54,7 @@ $color-transformado:rgb(214, 39, 8);
     justify-content: space-around;
     flex-basis: 100px;
 }
-@each $grilla in grillaFox,grillaFuji,grillaTren,grillaGato {
+@each $grilla in grillaFox,grillaFuji,grillaTren,grillaGato,grillaSimulador {
     .seccion-card--#{$grilla}{
         grid-area:#{$grilla};
     }
@@ -93,7 +93,7 @@ $color-transformado:rgb(214, 39, 8);
     border-radius: 30%;
     border:$color-principal 2px solid;
 }
-@each $img in fuji,tren,nekko,foxx {
+@each $img in fuji,tren,nekko,foxx,avion {
     .seccion-card__imagen__enlace--#{$img} { 
         background-image:url('../media/img/img-#{$img}.jpg');
     }

@@ -269,5 +269,13 @@
     "yallist": "^4.0.0",
     "yargs": "^13.3.2",
     "yargs-parser": "^13.1.2"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/WalterJRomero/La_puerta_de_Japon.git"
+  },
+  "bugs": {
+    "url": "https://github.com/WalterJRomero/La_puerta_de_Japon/issues"
+  },
+  "homepage": "https://github.com/WalterJRomero/La_puerta_de_Japon#readme"
 }

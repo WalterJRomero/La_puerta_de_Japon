@@ -57,6 +57,9 @@
 .seccion-card--grillaGato {
   grid-area: grillaGato; }
 
+.seccion-card--grillaSimulador {
+  grid-area: grillaSimulador; }
+
 .seccion-card__enlace--tamano {
   width: auto;
   height: auto;
@@ -98,6 +101,9 @@
 
 .seccion-card__imagen__enlace--foxx {
   background-image: url("../media/img/img-foxx.jpg"); }
+
+.seccion-card__imagen__enlace--avion {
+  background-image: url("../media/img/img-avion.jpg"); }
 
 /*---------------imagenes de cada logo de pagina -----*/
 .encabezado-principal__titulo {
@@ -325,6 +331,13 @@ section ul li {
   font-weight: 5rem;
   list-style: none; }
 
+.tabla {
+  border: 2px solid black; }
+
+.padding {
+  padding-left: 0.5rem;
+  padding-right: 1rem; }
+
 @keyframes principal {
   0% {
     opacity: 0.1; }
@@ -394,6 +407,35 @@ section ul li {
   transition: none; }
   .grow:hover {
     transform: none; }
+
+/* Estilos del botón de scroll */
+.boton-scroll {
+  position: fixed;
+  bottom: 2vh;
+  right: 1vw;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 40%;
+  font-size: 2rem;
+  font-weight: bold;
+  background-color: black;
+  color: tomato;
+  /* outline: 0;
+    border: 0; */
+  cursor: none;
+  transition: all 0.5s ease-out; }
+
+.boton-scroll:hover {
+  background-color: tomato;
+  color: black; }
+
+#botonGuardar:hover {
+  background-color: tomato;
+  color: black; }
+
+.hidden {
+  opacity: 0;
+  visibility: hidden; }
 
 /*-----------------banner ---------------*/
 .fondoBanner {
@@ -766,6 +808,10 @@ section ul li {
   background-image: url("../media/img/fondo_sobremi.jpeg");
   background-position-y: 32%; }
 
+.fondoHeader-avion {
+  background-image: url("../media/img/fondo_avion.jpeg");
+  background-position-y: 70%; }
+
 @media only screen and (min-width: 992px) {
   .navbar-nav li:hover {
     border-bottom: black 2px solid; } }
@@ -835,7 +881,7 @@ section ul li {
     font-size: 1.7rem; }
   .bloque-main {
     display: grid;
-    grid-template-areas: "grillaTituloIndex" "grillaFox" "grillaFuji"  "grillaTren"  "grillaGato" "footer";
+    grid-template-areas: "grillaTituloIndex" "grillaFox" "grillaFuji"  "grillaTren"  "grillaGato" "grillaSimulador" "footer";
     grid-template-columns: 3fr;
     margin: 0px;
     padding: 0px; }
@@ -870,7 +916,7 @@ section ul li {
     margin: 2px;
     padding: 2px;
     display: grid;
-    grid-template-areas: "grillaTituloIndex grillaTituloIndex grillaTituloIndex" ". grillaFox  . " ". grillaFuji . "  ". grillaTren ."  ". grillaGato ." "footer footer footer";
+    grid-template-areas: "grillaTituloIndex grillaTituloIndex grillaTituloIndex" ". grillaFox  . " ". grillaFuji . "  ". grillaTren ."  ". grillaGato ." ". grillaSimulador ." "footer footer footer";
     grid-template-columns: 2fr 2fr 2fr;
     grid-column-gap: 0px; } }
 
